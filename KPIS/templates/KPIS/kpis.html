@@ -1,0 +1,212 @@
+{% extends "ProEventos/base.html" %}
+{% load static %}
+
+{% block title %}KPIS{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'ProEventos/css/kpis.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="tag">Planeación Estratégica</div>
+    <h1>Indicadores <span>KPI's</span></h1>
+    <p>6 Indicadores Clave de Desempeño con métrica objetivo, fórmula y justificación — Proeventos S.A.S.</p>
+  </div>
+</section>
+
+<section class="kpi-section">
+  <div class="container">
+    <div class="sec-heading">Indicadores Clave de <span>Desempeño</span></div>
+    <div class="gold-line"></div>
+
+    <div class="row g-4">
+
+      <!-- 
+      <div class="col-lg-4 col-md-6 fade-in-up">
+        <div class="kpi-card k1">
+          <div class="kpi-header">
+            <div class="kpi-icon"><i class="bi bi-currency-dollar"></i></div>
+            <div class="kpi-header-text">
+              <span class="kpi-num">KPI 01</span>
+              <h5>Ingresos Mensuales</h5>
+            </div>
+          </div>
+          <div class="kpi-metric">
+            <span class="metric-value">$18M</span>
+            <span class="metric-label">COP por mes como meta para el primer año</span>
+          </div>
+          <div class="kpi-progress">
+            <div class="prog-labels"><span>Actual estimado</span><span>Meta: $18M</span></div>
+            <div class="prog-track"><div class="prog-fill" data-width="45"></div></div>
+          </div>
+          <div class="kpi-body">
+            <div class="formula-box">
+              <span class="formula-label">Fórmula</span>
+              Ingresos = N.º Eventos × Ticket Promedio
+            </div>
+            <p class="justification">Permite monitorear la generación de caja mes a mes. Con un ticket promedio de $3M y 6 eventos al mes se alcanza la meta. Es el KPI más crítico para la sostenibilidad del negocio en la etapa inicial.</p>
+            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Mensual</span>
+          </div>
+        </div>
+      </div>
+
+      KPI 2
+      <div class="col-lg-4 col-md-6 fade-in-up">
+        <div class="kpi-card k2">
+          <div class="kpi-header">
+            <div class="kpi-icon"><i class="bi bi-people-fill"></i></div>
+            <div class="kpi-header-text">
+              <span class="kpi-num">KPI 02</span>
+              <h5>Tasa de Conversión</h5>
+            </div>
+          </div>
+          <div class="kpi-metric">
+            <span class="metric-value">35%</span>
+            <span class="metric-label">de cotizaciones que se convierten en contratos</span>
+          </div>
+          <div class="kpi-progress">
+            <div class="prog-labels"><span>Estándar sector: 20%</span><span>Meta: 35%</span></div>
+            <div class="prog-track"><div class="prog-fill" data-width="60"></div></div>
+          </div>
+          <div class="kpi-body">
+            <div class="formula-box">
+              <span class="formula-label">Fórmula</span>
+              Tasa = (Contratos / Cotizaciones) × 100
+            </div>
+            <p class="justification">Una tasa del 35% está por encima del promedio del sector (≈20%) e indica que el proceso de ventas y la propuesta de valor son efectivos. Se optimiza con seguimiento por WhatsApp y reuniones de cotización personalizadas.</p>
+            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Mensual</span>
+          </div>
+        </div>
+      </div>
+
+      KPI 3
+      <div class="col-lg-4 col-md-6 fade-in-up">
+        <div class="kpi-card k3">
+          <div class="kpi-header">
+            <div class="kpi-icon"><i class="bi bi-star-fill"></i></div>
+            <div class="kpi-header-text">
+              <span class="kpi-num">KPI 03</span>
+              <h5>Satisfacción del Cliente</h5>
+            </div>
+          </div>
+          <div class="kpi-metric">
+            <span class="metric-value">4.8</span>
+            <span class="metric-label">/ 5.0 en encuesta NPS post-evento</span>
+          </div>
+          <div class="kpi-progress">
+            <div class="prog-labels"><span>Mín. aceptable: 4.0</span><span>Meta: 4.8/5.0</span></div>
+            <div class="prog-track"><div class="prog-fill" data-width="80"></div></div>
+          </div>
+          <div class="kpi-body">
+            <div class="formula-box">
+              <span class="formula-label">Fórmula</span>
+              NPS = % Promotores − % Detractores
+            </div>
+            <p class="justification">La satisfacción del cliente es el principal motor de referidos en el sector eventos. Un NPS alto (>4.8) garantiza recomendaciones orgánicas que reducen el costo de adquisición en un 30% aproximadamente. Se mide con encuesta 48h post-evento.</p>
+            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Por evento</span>
+          </div>
+        </div>
+      </div>
+
+       KPI 4
+      <div class="col-lg-4 col-md-6 fade-in-up">
+        <div class="kpi-card k4">
+          <div class="kpi-header">
+            <div class="kpi-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <div class="kpi-header-text">
+              <span class="kpi-num">KPI 04</span>
+              <h5>Margen Operacional</h5>
+            </div>
+          </div>
+          <div class="kpi-metric">
+            <span class="metric-value">28%</span>
+            <span class="metric-label">de margen neto sobre ingresos totales</span>
+          </div>
+          <div class="kpi-progress">
+            <div class="prog-labels"><span>Mín. viable: 20%</span><span>Meta: 28%</span></div>
+            <div class="prog-track"><div class="prog-fill" data-width="55"></div></div>
+          </div>
+          <div class="kpi-body">
+            <div class="formula-box">
+              <span class="formula-label">Fórmula</span>
+              Margen = (Utilidad Neta / Ingresos) × 100
+            </div>
+            <p class="justification">El margen del 28% es el umbral que garantiza rentabilidad real después de cubrir nómina, proveedores y marketing. Permite reinversión en crecimiento. Se optimiza con economías de escala en proveedores y paquetes de mayor ticket.</p>
+            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Trimestral</span>
+          </div>
+        </div>
+      </div>
+
+      KPI 5
+      <div class="col-lg-4 col-md-6 fade-in-up">
+        <div class="kpi-card k5">
+          <div class="kpi-header">
+            <div class="kpi-icon"><i class="bi bi-instagram"></i></div>
+            <div class="kpi-header-text">
+              <span class="kpi-num">KPI 05</span>
+              <h5>Alcance Digital</h5>
+            </div>
+          </div>
+          <div class="kpi-metric">
+            <span class="metric-value">5K</span>
+            <span class="metric-label">seguidores activos en Instagram al año 1</span>
+          </div>
+          <div class="kpi-progress">
+            <div class="prog-labels"><span>Inicio estimado: 800</span><span>Meta: 5,000</span></div>
+            <div class="prog-track"><div class="prog-fill" data-width="38"></div></div>
+          </div>
+          <div class="kpi-body">
+            <div class="formula-box">
+              <span class="formula-label">Fórmula</span>
+              Crecimiento = ((F2 − F1) / F1) × 100
+            </div>
+            <p class="justification">El 68% de los clientes de eventos llega por recomendación en redes sociales. Crecer a 5K seguidores activos (con tasa de engagement >4%) genera un flujo constante de cotizaciones orgánicas sin depender únicamente de publicidad paga.</p>
+            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Mensual</span>
+          </div>
+        </div>
+      </div>
+
+       KPI 6
+      <div class="col-lg-4 col-md-6 fade-in-up">
+        <div class="kpi-card k6">
+          <div class="kpi-header">
+            <div class="kpi-icon"><i class="bi bi-arrow-repeat"></i></div>
+            <div class="kpi-header-text">
+              <span class="kpi-num">KPI 06</span>
+              <h5>Tasa de Clientes Referidos</h5>
+            </div>
+          </div>
+          <div class="kpi-metric">
+            <span class="metric-value">40%</span>
+            <span class="metric-label">de nuevos clientes provenientes de referidos</span>
+          </div>
+          <div class="kpi-progress">
+            <div class="prog-labels"><span>Año 1 estimado: 15%</span><span>Meta: 40%</span></div>
+            <div class="prog-track"><div class="prog-fill" data-width="37"></div></div>
+          </div>
+          <div class="kpi-body">
+            <div class="formula-box">
+              <span class="formula-label">Fórmula</span>
+              Referidos% = (Clientes referidos / Total clientes) × 100
+            </div>
+            <p class="justification">Los referidos tienen un costo de adquisición 5× menor que los clientes por publicidad paga y una tasa de cierre un 70% mayor. Alcanzar el 40% de referidos al año 3 indica que el programa de fidelización y la calidad del servicio funcionan.</p>
+            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Trimestral</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+-->
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'ProEventos/js/kpis.js' %}"></script>
+
+{% endblock %}

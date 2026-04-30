@@ -1,0 +1,296 @@
+{% extends "ProEventos/base.html" %}
+{% load static %}
+
+{% block title %}Inversión Plan Financiero{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'ProEventos/css/inversion.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="tag">Planeación Estratégica</div>
+    <h1>Plan de <span>Inversión</span></h1>
+    <p>Gastos preoperativos, capital de trabajo, activos fijos y fuentes de financiación — Proeventos S.A.S.</p>
+  </div>
+</section>
+<!--
+<section class="inv-section">
+  <div class="container">
+
+    <div class="row g-5">
+       Tablas 
+      <div class="col-lg-8">
+
+        TABLA 1: GASTOS PREOPERATIVOS 
+        <div class="mb-5 fade-in-up">
+          <div class="sec-heading"><span>Gastos</span> Preoperativos</div>
+          <div class="gold-line"></div>
+          <div class="inv-table-wrap">
+            <div class="inv-table-title">
+              <div class="t-icon"><i class="bi bi-tools"></i></div>
+              <div>
+                <h6>Gastos Preoperativos</h6>
+                <span>Inversión inicial antes de iniciar operaciones</span>
+              </div>
+            </div>
+            <table class="inv-table">
+              <thead>
+                <tr>
+                  <th>Concepto</th>
+                  <th>Descripción</th>
+                  <th>Valor (COP)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Constitución empresa <span class="row-badge badge-alto">Legal</span></td>
+                  <td>Registro Cámara de Comercio, RUT, escritura</td>
+                  <td>$450,000</td>
+                </tr>
+                <tr>
+                  <td>Diseño de marca <span class="row-badge badge-med">Branding</span></td>
+                  <td>Logo, manual de identidad visual, papelería</td>
+                  <td>$1,200,000</td>
+                </tr>
+                <tr>
+                  <td>Desarrollo web <span class="row-badge badge-med">Digital</span></td>
+                  <td>Sitio web con formulario de cotización</td>
+                  <td>$2,500,000</td>
+                </tr>
+                <tr>
+                  <td>Fotografía portafolio <span class="row-badge badge-bajo">Contenido</span></td>
+                  <td>Sesión de fotos para portafolio inicial</td>
+                  <td>$800,000</td>
+                </tr>
+                <tr>
+                  <td>Licencias y permisos <span class="row-badge badge-alto">Legal</span></td>
+                  <td>SAYCO/ACINPRO, uso comercial de espacios</td>
+                  <td>$350,000</td>
+                </tr>
+                <tr>
+                  <td>Marketing lanzamiento <span class="row-badge badge-med">Mktg</span></td>
+                  <td>Campaña inicial Meta Ads y Google</td>
+                  <td>$1,500,000</td>
+                </tr>
+                <tr>
+                  <td>Capacitación equipo <span class="row-badge badge-bajo">RRHH</span></td>
+                  <td>Curso de event planning y protocolo</td>
+                  <td>$600,000</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2">TOTAL GASTOS PREOPERATIVOS</td>
+                  <td>$7,400,000</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+         TABLA 2: CAPITAL DE TRABAJO
+        <div class="mb-5 fade-in-up">
+          <div class="sec-heading">Capital de <span>Trabajo</span></div>
+          <div class="gold-line"></div>
+          <div class="inv-table-wrap">
+            <div class="inv-table-title">
+              <div class="t-icon"><i class="bi bi-cash-stack"></i></div>
+              <div>
+                <h6>Capital de Trabajo</h6>
+                <span>Recursos para los primeros 3 meses de operación</span>
+              </div>
+            </div>
+            <table class="inv-table">
+              <thead>
+                <tr>
+                  <th>Concepto</th>
+                  <th>Mensual (COP)</th>
+                  <th>3 meses (COP)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nómina coordinador principal <span class="row-badge badge-alto">Fijo</span></td>
+                  <td>$1,800,000</td>
+                  <td>$5,400,000</td>
+                </tr>
+                <tr>
+                  <td>Nómina asistente logístico <span class="row-badge badge-alto">Fijo</span></td>
+                  <td>$1,100,000</td>
+                  <td>$3,300,000</td>
+                </tr>
+                <tr>
+                  <td>Arriendo oficina / coworking <span class="row-badge badge-med">Fijo</span></td>
+                  <td>$600,000</td>
+                  <td>$1,800,000</td>
+                </tr>
+                <tr>
+                  <td>Marketing digital mensual <span class="row-badge badge-med">Variable</span></td>
+                  <td>$400,000</td>
+                  <td>$1,200,000</td>
+                </tr>
+                <tr>
+                  <td>Servicios públicos y comunicaciones <span class="row-badge badge-bajo">Fijo</span></td>
+                  <td>$200,000</td>
+                  <td>$600,000</td>
+                </tr>
+                <tr>
+                  <td>Imprevistos y fondo emergencia <span class="row-badge badge-bajo">Reserva</span></td>
+                  <td>$300,000</td>
+                  <td>$900,000</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2">TOTAL CAPITAL DE TRABAJO (3 meses)</td>
+                  <td>$13,200,000</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+       TABLA 3: ACTIVOS FIJOS
+        <div class="fade-in-up">
+          <div class="sec-heading">Activos <span>Fijos</span></div>
+          <div class="gold-line"></div>
+          <div class="inv-table-wrap">
+            <div class="inv-table-title">
+              <div class="t-icon"><i class="bi bi-laptop"></i></div>
+              <div>
+                <h6>Activos Fijos</h6>
+                <span>Bienes tangibles e intangibles de largo plazo</span>
+              </div>
+            </div>
+            <table class="inv-table">
+              <thead>
+                <tr>
+                  <th>Activo</th>
+                  <th>Especificación</th>
+                  <th>Valor (COP)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Computador portátil <span class="row-badge badge-alto">Esencial</span></td>
+                  <td>MacBook Air o similar (16GB RAM)</td>
+                  <td>$3,200,000</td>
+                </tr>
+                <tr>
+                  <td>Smartphone <span class="row-badge badge-alto">Esencial</span></td>
+                  <td>Para gestión de clientes y contenido RRSS</td>
+                  <td>$1,800,000</td>
+                </tr>
+                <tr>
+                  <td>Cámara fotográfica <span class="row-badge badge-med">Operativo</span></td>
+                  <td>Sony ZV-E10 o Canon M50 II para contenido</td>
+                  <td>$1,500,000</td>
+                </tr>
+                <tr>
+                  <td>Impresora / escáner <span class="row-badge badge-bajo">Oficina</span></td>
+                  <td>Para contratos y documentación de clientes</td>
+                  <td>$400,000</td>
+                </tr>
+                <tr>
+                  <td>Software y herramientas <span class="row-badge badge-med">Digital</span></td>
+                  <td>Canva Pro, Adobe, herramienta de gestión</td>
+                  <td>$500,000</td>
+                </tr>
+                <tr>
+                  <td>Muestras decorativas <span class="row-badge badge-bajo">Portafolio</span></td>
+                  <td>Kit de muestra para presentaciones a clientes</td>
+                  <td>$700,000</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2">TOTAL ACTIVOS FIJOS</td>
+                  <td>$8,100,000</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+       Gráfico + Resumen 
+      <div class="col-lg-4">
+
+        Total general 
+        <div class="total-card mb-4 fade-in-up">
+          <div class="lbl">Inversión Total Requerida</div>
+          <span class="amount">$28.7M</span>
+          <p>Suma de gastos preoperativos ($7.4M), capital de trabajo para 3 meses ($13.2M) y activos fijos ($8.1M). Financiada por tres fuentes estratégicas.</p>
+        </div>
+
+        Gráfico de distribución 
+        <div class="chart-section fade-in-up">
+          <h6 style="font-family:'Playfair Display',serif;color:var(--dorado);font-size:1rem;margin-bottom:20px;">Distribución de la Inversión</h6>
+          <div class="donut-wrap">
+            <canvas id="donutChart"></canvas>
+            <div class="donut-center">
+              <span class="total">$28.7M</span>
+              <span class="lbl">Total COP</span>
+            </div>
+          </div>
+           Leyenda 
+          <div class="mt-2">
+            <div class="legend-item">
+              <div class="legend-dot" style="background:#c9a84c;"></div>
+              <span class="legend-name">Capital de Trabajo</span>
+              <span class="legend-pct" style="color:var(--dorado);">46%</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot" style="background:#3949ab;"></div>
+              <span class="legend-name">Activos Fijos</span>
+              <span class="legend-pct" style="color:#7c8fe8;">28%</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot" style="background:#26c6da;"></div>
+              <span class="legend-name">Gastos Preoperativos</span>
+              <span class="legend-pct" style="color:#26c6da;">26%</span>
+            </div>
+          </div>
+
+           Fuentes de financiación 
+          <div class="mt-4 pt-4" style="border-top:1px solid rgba(255,255,255,.07);">
+            <h6 style="font-family:'Playfair Display',serif;color:var(--dorado);font-size:.9rem;margin-bottom:16px;">Fuentes de Financiación</h6>
+            <div class="legend-item">
+              <div class="legend-dot" style="background:#66bb6a;border-radius:50%;"></div>
+              <span class="legend-name" style="font-size:.82rem;">Capital propio socios</span>
+              <span class="legend-pct" style="color:#66bb6a;font-size:.95rem;">50%</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot" style="background:#ef5350;border-radius:50%;"></div>
+              <span class="legend-name" style="font-size:.82rem;">Crédito bancario PYME</span>
+              <span class="legend-pct" style="color:#ef5350;font-size:.95rem;">30%</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot" style="background:#ab47bc;border-radius:50%;"></div>
+              <span class="legend-name" style="font-size:.82rem;">Fondo Emprender SENA</span>
+              <span class="legend-pct" style="color:#ab47bc;font-size:.95rem;">20%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+-->
+
+{% endblock %}
+
+{% block extra_js %}
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="{% static 'ProEventos/js/inversion.js' %}"></script>
+
+{% endblock %}

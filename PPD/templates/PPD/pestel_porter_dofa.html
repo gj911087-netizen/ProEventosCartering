@@ -1,0 +1,460 @@
+{% extends "ProEventos/base.html" %}
+{% load static %}
+
+{% block title %}Análisis Estratégico{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'ProEventos/css/ppd.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="tag">Planeación Estratégica</div>
+    <h1>Análisis <span>Estratégico</span></h1>
+    <p>PESTEL · Cinco Fuerzas de Porter · Matriz DOFA — Proeventos S.A.S.</p>
+  </div>
+</section>
+
+<!-- ══════════════ PESTEL ══════════════ -->
+<section class="analysis-section">
+  <div class="container">
+    <div class="sec-rule">
+      <div class="line"></div>
+      <div class="dot"></div>
+      <div>
+        <div class="sec-heading"><span>P</span>ESTEL</div>
+        <p style="color:rgba(255,255,255,.5);font-size:.85rem;margin:0;">Análisis del macroentorno</p>
+      </div>
+      <div class="dot"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="d-flex gap-4 mb-4 flex-wrap justify-content-center">
+      <span class="d-flex align-items-center gap-2" style="font-size:.8rem;color:rgba(255,255,255,.6);">
+        <span style="width:12px;height:12px;background:#b71c1c;display:inline-block;"></span> Alto impacto
+      </span>
+      <span class="d-flex align-items-center gap-2" style="font-size:.8rem;color:rgba(255,255,255,.6);">
+        <span style="width:12px;height:12px;background:#e65100;display:inline-block;"></span> Impacto medio
+      </span>
+      <span class="d-flex align-items-center gap-2" style="font-size:.8rem;color:rgba(255,255,255,.6);">
+        <span style="width:12px;height:12px;background:#2e7d32;display:inline-block;"></span> Bajo impacto
+      </span>
+    </div>
+
+    <div class="pestel-grid fade-in-up">
+      <!-- Político -->
+      <div class="pestel-cell medio">
+        <span class="letter">P</span>
+        <span class="badge-impact">Medio</span>
+        <h5>Político</h5>
+        <ul>
+          <li>Las normativas de seguridad alimentaria exigen controles sanitarios, protocolos y certificaciones, generando confianza en los clientes aunque aumenta los costos.</li>
+          <li>Las leyes laborales implican prestaciones y planes de beneficios, favoreciendo un equipo sólido pero incrementando los gastos administrativos.</li>
+          <li>Las políticas fiscales requieren pago de impuestos y planeación tributaria, permitiendo organizar las finanzas aunque puede reducir la rentabilidad.</li>
+          <li>Los programas de apoyo gubernamental exigen seguimiento constante, brindando mayor seguridad pero pudiendo verse afectados por la inestabilidad del entorno.</li>
+        </ul>
+      </div>
+      <!-- Económico -->
+      <div class="pestel-cell alto">
+        <span class="letter">E</span>
+        <span class="badge-impact">Alto</span>
+        <h5>Económico</h5>
+        <ul>
+          <li>Los precios de materias primas requieren estrategias como contratos a futuro y búsqueda de proveedores, aunque la inflación puede reducir la rentabilidad.</li>
+          <li>Los costos de transporte y logística se optimizan mediante rutas eficientes, pero el alza del combustible puede encarecer el servicio.</li>
+          <li>El poder adquisitivo del cliente influye en la demanda; se adaptan menús y se fidelizan clientes, aunque los recortes afectan el valor promedio de venta.</li>
+          <li>Los salarios y disponibilidad del personal exigen capacitación continua, mejorando la calidad pero aumentando costos por la competencia laboral.</li>
+        </ul>
+      </div>
+      <!-- Social -->
+      <div class="pestel-cell alto">
+        <span class="letter">S</span>
+        <span class="badge-impact">Alto</span>
+        <h5>Social</h5>
+        <ul>
+          <li>Las tendencias de alimentación saludable impulsan menús light y veganos, permitiendo diferenciarse, aunque implica mayores costos en ingredientes.</li>
+          <li>La exigencia en experiencia y decoración obliga a innovar constantemente y generar alianzas estratégicas, aunque requiere mayor inversión.</li>
+          <li>La responsabilidad social promueve el uso de productos locales y donación de excedentes, mejorando la imagen aunque exige transparencia en los procesos.</li>
+          <li>Las costumbres y preferencias culturales requieren adaptación continua, ampliando la cartera de clientes pero implicando un proceso constante de aprendizaje.</li>
+        </ul>
+      </div>
+      <!-- Tecnológico -->
+      <div class="pestel-cell medio">
+        <span class="letter">T</span>
+        <span class="badge-impact">Medio</span>
+        <h5>Tecnológico</h5>
+        <ul>
+          <li>El software de gestión permite digitalizar pedidos e integrar IA, reduciendo errores y optimizando el tiempo, aunque implica costos de licencias.</li>
+          <li>El marketing digital y redes sociales facilitan la promoción y construcción de marca a bajo costo, pero requieren actualización constante de contenido.</li>
+          <li>Las herramientas digitales de logística y trazabilidad mejoran la eficiencia y reducen desperdicios, aunque generan dependencia tecnológica.</li>
+        </ul>
+      </div>
+      <!-- Ecológico -->
+      <div class="pestel-cell bajo">
+        <span class="letter">E</span>
+        <span class="badge-impact">Bajo</span>
+        <h5>Ecológico</h5>
+        <ul>
+          <li>La gestión de residuos con meta "cero residuos" mejora la imagen y reduce costos, aunque requiere procesos adicionales.</li>
+          <li>El uso de empaques y materiales sostenibles aumenta el valor percibido y se alinea con tendencias, pero implica mayores costos.</li>
+          <li>La optimización de energía y agua reduce gastos operativos, aunque puede requerir inversión en infraestructura.</li>
+          <li>El impacto climático exige planificación y adaptación, siendo un riesgo por posibles cancelaciones de eventos.</li>
+        </ul>
+      </div>
+      <!-- Legal -->
+      <div class="pestel-cell medio">
+        <span class="letter">L</span>
+        <span class="badge-impact">Medio</span>
+        <h5>Legal</h5>
+        <ul>
+          <li>El cumplimiento de permisos y licencias permite operar legalmente, aunque los trámites pueden ser lentos y burocráticos.</li>
+          <li>Las normas de higiene y manipulación garantizan la inocuidad de los alimentos, evitando sanciones; su incumplimiento genera multas severas.</li>
+          <li>Los contratos con clientes y proveedores brindan seguridad jurídica, aunque pueden generar conflictos si son muy estrictos.</li>
+          <li>La protección de datos personales fortalece la confianza del cliente, pero exige cumplimiento normativo constante.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PORTER ══════════════ -->
+<section class="analysis-section">
+  <div class="container">
+    <div class="sec-rule">
+      <div class="line"></div>
+      <div class="dot"></div>
+      <div>
+        <div class="sec-heading">5 Fuerzas de <span>Porter</span></div>
+      </div>
+      <div class="dot"></div>
+      <div class="line"></div>
+    </div>
+
+    <!-- ── Diagrama central ── -->
+    <div class="porter-wrap fade-in-up">
+      <div class="porter-center">
+
+        <!-- Arriba: Nuevos entrantes -->
+        <div class="porter-card top" style="grid-column:2;grid-row:1;text-align:center;">
+          <h6 style="color:var(--dorado);">⬆ Amenaza de Nuevos Entrantes</h6>
+          
+          <div class="intensity-bar">
+            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
+          </div>
+          <small style="color:rgba(255,255,255,.4);font-size:.7rem;">MEDIA — 3/5</small>
+        </div>
+
+        <!-- Izquierda: Proveedores -->
+        <div class="porter-card left" style="grid-column:1;grid-row:2;text-align:center;">
+          <h6 style="color:var(--dorado);">◀ Poder de Proveedores</h6>
+          
+          <div class="intensity-bar">
+            <span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
+          </div>
+          <small style="color:rgba(255,255,255,.4);font-size:.7rem;">BAJA-MEDIA — 2/5</small>
+        </div>
+
+        <!-- Centro -->
+        <div class="porter-card central">
+          <span style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--dorado);letter-spacing:2px;font-weight:700;">PROEVENTOS</span>
+          <p style="color:rgba(255,255,255,.65);font-size:.78rem;margin-top:8px;">Organización integral de eventos sociales y corporativos en Medellín</p>
+        </div>
+
+        <!-- Derecha: Clientes -->
+        <div class="porter-card right" style="grid-column:3;grid-row:2;text-align:center;">
+          <h6 style="color:var(--dorado);">▶ Poder de Compradores</h6>
+          
+          <div class="intensity-bar">
+            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
+          </div>
+          <small style="color:rgba(255,255,255,.4);font-size:.7rem;">ALTA — 4/5</small>
+        </div>
+
+        <!-- Abajo: Sustitutos -->
+        <div class="porter-card" style="grid-column:2;grid-row:3;text-align:center;">
+          <h6 style="color:var(--dorado);">⬇ Amenaza de Sustitutos</h6>
+         
+          <div class="intensity-bar">
+            <span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
+          </div>
+          <small style="color:rgba(255,255,255,.4);font-size:.7rem;">MEDIA — 2/5</small>
+        </div>
+
+      </div>
+
+      <!-- Rivalidad central -->
+      <div class="mt-4">
+        <div class="porter-card" style="text-align:center;max-width:500px;margin:0 auto;border-color:var(--dorado);border-top:3px solid var(--dorado);">
+          <h6 style="color:var(--dorado);font-size:1rem;">⚔ Rivalidad entre Competidores Existentes</h6>
+          <div class="intensity-bar" style="justify-content:center;">
+            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
+          </div>
+          <small style="color:rgba(255,255,255,.4);font-size:.7rem;">ALTA — 4/5</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Tabla: Situación + Estrategia por fuerza ── -->
+    <div class="fade-in-up" style="margin-top:60px;">
+
+      <div style="text-align:center;margin-bottom:36px;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#fff;">
+          Situación <span style="color:var(--dorado);">&</span> Estrategia por Fuerza
+        </div>
+        <div style="width:50px;height:2px;background:var(--dorado);margin:10px auto 0;"></div>
+      </div>
+
+      <!-- FUERZA 1: Nuevos Entrantes -->
+      <div style="
+        border:1px solid rgba(201,168,76,.2);
+        border-top:3px solid var(--dorado);
+        background:linear-gradient(145deg,rgba(26,35,126,.15),rgba(4,4,15,.7));
+        padding:28px 32px;
+        margin-bottom:16px;
+      ">
+        <div class="row g-4">
+          <div class="col-12">
+            <h6 style="color:var(--dorado);font-size:.75rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">
+              ⬆ Amenaza de Nuevos Entrantes — Media 3/5
+            </h6>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(201,168,76,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Situación</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>La inversión inicial puede ser moderada para empezar, pero es significativa para escalar y ofrecer servicios completos.</li>
+              <li>La reputación, experiencia y el cumplimiento normativo son barreras de entrada importantes.</li>
+              <li>Existe un desafío para atraer y retener personal calificado (chefs, personal de servicio).</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(201,168,76,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Estrategia</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>Construir una marca sólida y una reputación de excelencia.</li>
+              <li>Especializarse en nichos de mercado con barreras de entrada más altas (ej. catering de alta cocina, eventos temáticos).</li>
+              <li>Invertir en certificaciones y cumplimiento de normativas sanitarias que generen confianza.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FUERZA 2: Poder de Compradores -->
+      <div style="
+        border:1px solid rgba(201,168,76,.2);
+        border-top:3px solid #42a5f5;
+        background:linear-gradient(145deg,rgba(13,26,58,.3),rgba(4,4,15,.7));
+        padding:28px 32px;
+        margin-bottom:16px;
+      ">
+        <div class="row g-4">
+          <div class="col-12">
+            <h6 style="color:#42a5f5;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">
+              ▶ Poder de Negociación de los Compradores — Alta 4/5
+            </h6>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(66,165,245,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Situación</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>Los clientes son sensibles al precio y comparan fácilmente entre proveedores.</li>
+              <li>Los costos de cambio para el cliente son bajos, lo que aumenta su poder de negociación.</li>
+              <li>Grandes clientes (empresas, instituciones) pueden negociar condiciones especiales.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(66,165,245,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Estrategia</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>Diferenciar el servicio por calidad, creatividad, personalización y experiencia del cliente.</li>
+              <li>Ofrecer paquetes de servicios flexibles adaptados a diferentes presupuestos y necesidades.</li>
+              <li>Construir relaciones sólidas y de confianza con los clientes a largo plazo.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FUERZA 3: Poder de Proveedores -->
+      <div style="
+        border:1px solid rgba(201,168,76,.2);
+        border-top:3px solid #ab47bc;
+        background:linear-gradient(145deg,rgba(26,10,40,.3),rgba(4,4,15,.7));
+        padding:28px 32px;
+        margin-bottom:16px;
+      ">
+        <div class="row g-4">
+          <div class="col-12">
+            <h6 style="color:#ab47bc;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">
+              ◀ Poder de Negociación de los Proveedores — Baja-Media 2/5
+            </h6>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(171,71,188,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Situación</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>Moderado para ingredientes básicos (muchas opciones), pero alto para productos especializados, gourmet o de temporada.</li>
+              <li>El personal calificado (chefs, decoradores) y servicios logísticos especializados pueden tener poder de negociación.</li>
+              <li>Dependencia de la calidad y disponibilidad de proveedores clave.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(171,71,188,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Estrategia</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>Diversificar la base de proveedores para reducir la dependencia.</li>
+              <li>Establecer relaciones a largo plazo con proveedores confiables para asegurar calidad y precios.</li>
+              <li>Negociar volúmenes o contratos a largo plazo cuando sea posible.</li>
+              <li>Considerar la integración vertical para ciertos insumos si es estratégicamente viable.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FUERZA 4: Sustitutos -->
+      <div style="
+        border:1px solid rgba(201,168,76,.2);
+        border-top:3px solid #66bb6a;
+        background:linear-gradient(145deg,rgba(10,26,10,.3),rgba(4,4,15,.7));
+        padding:28px 32px;
+        margin-bottom:16px;
+      ">
+        <div class="row g-4">
+          <div class="col-12">
+            <h6 style="color:#66bb6a;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">
+              ⬇ Amenaza de Productos Sustitutos — Media 2/5
+            </h6>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(102,187,106,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Situación</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>Alternativas como restaurantes con servicios de eventos, comida para llevar y food trucks.</li>
+              <li>La preparación interna de eventos por parte del cliente es una opción latente.</li>
+              <li>La opción de "hacerlo uno mismo" (DIY) para eventos más pequeños o informales.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(102,187,106,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Estrategia</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>Destacar el valor integral del catering: experiencia, personalización, conveniencia y ahorro de tiempo.</li>
+              <li>Ofrecer servicios que los sustitutos no pueden replicar fácilmente (menús temáticos, experiencias gastronómicas inmersivas).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FUERZA 5: Rivalidad -->
+      <div style="
+        border:1px solid rgba(201,168,76,.2);
+        border-top:3px solid #ef5350;
+        background:linear-gradient(145deg,rgba(40,10,10,.3),rgba(4,4,15,.7));
+        padding:28px 32px;
+        margin-bottom:16px;
+      ">
+        <div class="row g-4">
+          <div class="col-12">
+            <h6 style="color:#ef5350;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">
+              ⚔ Rivalidad entre Competidores Existentes — Alta 4/5
+            </h6>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(239,83,80,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Situación</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>Sector con varios competidores informales y algunas empresas establecidas en Medellín.</li>
+              <li>La diferenciación por calidad y creatividad es clave para destacar.</li>
+              <li>Competencia fuerte en precio, especialmente en el segmento medio.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <p style="color:rgba(239,83,80,.7);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;">Estrategia</p>
+            <ul style="color:rgba(255,255,255,.65);font-size:.85rem;line-height:1.8;padding-left:18px;margin:0;">
+              <li>Posicionarse en el segmento premium con propuesta de valor diferenciada.</li>
+              <li>Fidelizar clientes mediante experiencias memorables que generen recomendaciones.</li>
+              <li>Fortalecer la identidad de marca para salir de la competencia por precio.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- fin tabla -->
+
+  </div>
+</section>
+
+<!-- ══════════════ DOFA ══════════════ -->
+<section class="analysis-section">
+  <div class="container">
+    <div class="sec-rule">
+      <div class="line"></div>
+      <div class="dot"></div>
+      <div>
+        <div class="sec-heading">Matriz <span>DOFA</span></div>
+        <p style="color:rgba(255,255,255,.5);font-size:.85rem;margin:0;">Debilidades · Oportunidades · Fortalezas · Amenazas</p>
+      </div>
+      <div class="dot"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="d-flex justify-content-center mb-2 gap-4 flex-wrap">
+      <span class="dofa-axis-label">← Factores Internos →</span>
+      <span class="dofa-axis-label">← Factores Externos →</span>
+    </div>
+
+    <div class="dofa-grid fade-in-up">
+      <!-- FORTALEZAS -->
+      <div class="dofa-q F">
+        <span class="q-label">F</span>
+        <h4>Fortalezas</h4>
+        <ul>
+          <li>Servicio personalizado adaptado a las necesidades y presupuesto de cada cliente</li>
+          <li>Enfoque en calidad, presentación y experiencia gastronómica</li>
+          <li>Propuesta innovadora y creativa en menús y montaje de eventos</li>
+          <li>Capacidad de generar experiencias memorables</li>
+          <li>Trabajo en equipo y buena organización</li>
+          <li>Flexibilidad para atender distintos tipos de eventos</li>
+        </ul>
+      </div>
+      <!-- OPORTUNIDADES -->
+      <div class="dofa-q O">
+        <span class="q-label">O</span>
+        <h4>Oportunidades</h4>
+        <ul>
+          <li>Crecimiento del mercado de eventos y celebraciones</li>
+          <li>Tendencia hacia servicios personalizados</li>
+          <li>Uso de redes sociales para promoción</li>
+          <li>Alianzas con organizadores de eventos</li>
+          <li>Preferencia por opciones gastronómicas diferenciadas</li>
+          <li>Expansión a eventos empresariales</li>
+        </ul>
+      </div>
+      <!-- DEBILIDADES -->
+      <div class="dofa-q D">
+        <span class="q-label">D</span>
+        <h4>Debilidades</h4>
+        <ul>
+          <li>Poco reconocimiento de marca</li>
+          <li>Recursos financieros limitados</li>
+          <li>Falta de experiencia frente a competidores establecidos</li>
+          <li>Dependencia de proveedores</li>
+          <li>Capacidad operativa limitada</li>
+        </ul>
+      </div>
+      <!-- AMENAZAS -->
+      <div class="dofa-q A">
+        <span class="q-label">A</span>
+        <h4>Amenazas</h4>
+        <ul>
+          <li>Alta competencia en el sector</li>
+          <li>Sensibilidad al precio por parte de los clientes</li>
+          <li>Incremento en costos de insumos</li>
+          <li>Cambios en tendencias del mercado</li>
+          <li>Riesgos logísticos en la operación</li>
+          <li>Situaciones económicas adversas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+  <script src="{% static 'ProEventos/js/ppd.js' %}"></script>
+{% endblock %}

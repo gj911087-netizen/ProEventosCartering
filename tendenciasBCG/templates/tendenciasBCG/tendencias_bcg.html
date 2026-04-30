@@ -1,0 +1,300 @@
+{% extends "ProEventos/base.html" %}
+{% load static %}
+
+{% block title %}Tendencias & Matriz BCG {% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'ProEventos/css/tendenciasBCG.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="tag">Planeación Estratégica</div>
+    <h1>Tendencias <span>&</span> BCG</h1>
+    <p>Proyección de ventas, análisis de tendencias y Matriz BCG — Proeventos Catering</p>
+  </div>
+</section>
+
+<!-- ══ TENDENCIAS ══ -->
+<section class="sec">
+  <div class="container">
+
+    <div class="sec-heading">Proyección de <span>Ventas</span></div>
+    <div class="gold-line"></div>
+
+    <div class="row g-5">
+
+      <div class="col-lg-7 fade-in-up">
+
+        <!-- T1 -->
+        <div class="trend-item t1">
+          <div class="trend-header">
+            <span class="trend-name">Eventos tradicionales (bodas, cumpleaños)</span>
+            <span class="trend-pct">Histórico</span>
+          </div>
+          <div class="trend-bar-bg">
+            <div class="trend-bar-fill" data-width="70"></div>
+          </div>
+          <p class="trend-desc">Los eventos tradicionales han sido constantes en el tiempo, formando la base del sector.</p>
+        </div>
+
+        <!-- T2 -->
+        <div class="trend-item t2">
+          <div class="trend-header">
+            <span class="trend-name">Comida estándar en eventos</span>
+            <span class="trend-pct">Antes</span>
+          </div>
+          <div class="trend-bar-bg">
+            <div class="trend-bar-fill" data-width="55"></div>
+          </div>
+          <p class="trend-desc">La comida en eventos solía ser estándar y poco innovadora, sin diferenciación.</p>
+        </div>
+
+        <!-- T3 -->
+        <div class="trend-item t3">
+          <div class="trend-header">
+            <span class="trend-name">Alta dependencia de temporadas altas</span>
+            <span class="trend-pct">Cíclico</span>
+          </div>
+          <div class="trend-bar-bg">
+            <div class="trend-bar-fill" data-width="60"></div>
+          </div>
+          <p class="trend-desc">Alta dependencia de diciembre y mitad de año como picos de demanda.</p>
+        </div>
+
+        <!-- T4 -->
+        <div class="trend-item t4">
+          <div class="trend-header">
+            <span class="trend-name">Crecimiento del sector de eventos</span>
+            <span class="trend-pct">+Alza</span>
+          </div>
+          <div class="trend-bar-bg">
+            <div class="trend-bar-fill" data-width="88"></div>
+          </div>
+          <p class="trend-desc">Crecimiento sostenido del sector de eventos y celebraciones a nivel local y regional.</p>
+        </div>
+
+        <!-- T5 -->
+        <div class="trend-item t5">
+          <div class="trend-header">
+            <span class="trend-name">Experiencias personalizadas e interactivas</span>
+            <span class="trend-pct">Alta</span>
+          </div>
+          <div class="trend-bar-bg">
+            <div class="trend-bar-fill" data-width="84"></div>
+          </div>
+          <p class="trend-desc">Mayor demanda de experiencias personalizadas: opciones saludables, veganas, light y estaciones de comida interactivas.</p>
+        </div>
+
+        <!-- T6 -->
+        <div class="trend-item t6">
+          <div class="trend-header">
+            <span class="trend-name">Redes sociales como canal de captación</span>
+            <span class="trend-pct">+61%</span>
+          </div>
+          <div class="trend-bar-bg">
+            <div class="trend-bar-fill" data-width="92"></div>
+          </div>
+          <p class="trend-desc">Uso de redes sociales como canal principal de captación — favorece directamente la propuesta innovadora de Proeventos.</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 fade-in-up">
+
+        <div class="row g-3">
+
+          <div class="col-6">
+            <div class="stat-card">
+              <div class="num">0–6M</div>
+              <div class="lbl">Corto plazo</div>
+              <div class="src">Bajo volumen · enfoque en captación de clientes</div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="stat-card">
+              <div class="num">6–12M</div>
+              <div class="lbl">Mediano plazo</div>
+              <div class="src">Aumento por recomendaciones · mayor presencia en redes</div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="stat-card">
+              <div class="num">1–2A</div>
+              <div class="lbl">Largo plazo</div>
+              <div class="src">Estabilidad · posicionamiento · diversificación</div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="stat-card">
+              <div class="num">+Redes</div>
+              <div class="lbl">Mayor presencia digital</div>
+              <div class="src">Reservas online y marketing digital</div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="stat-card">
+              <div class="num">Futuro</div>
+              <div class="lbl">Catering temático y corporativo</div>
+              <div class="src">Mayor digitalización · crecimiento progresivo · marca fortalecida</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BCG ══ -->
+<section class="sec">
+  <div class="container">
+
+    <div class="sec-heading">Matriz <span>BCG</span></div>
+    <div class="gold-line"></div>
+
+    <p style="color:rgba(255,255,255,.6);margin-bottom:40px;font-size:.95rem;">
+      Clasificación estratégica de los servicios de Proeventos Catering según crecimiento del mercado y participación relativa.
+    </p>
+
+    <div class="bcg-container fade-in-up">
+
+      <span class="bcg-lbl-alto">Alta tasa crecimiento ↑</span>
+      <span class="bcg-lbl-bajo">Baja tasa crecimiento ↓</span>
+      <span class="bcg-lbl-alta">← Alta participación</span>
+      <span class="bcg-lbl-baja">Baja participación →</span>
+
+      <div class="bcg-axis-y">Tasa de Crecimiento del Mercado</div>
+
+      <!-- ESTRELLAS -->
+      <div class="bcg-quadrant estrella">
+        <div>
+          <div class="bcg-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="bcg-sub">Estrellas</div>
+          <h4>Catering para bodas</h4>
+          <ul>
+            <li>Catering para bodas y eventos personalizados con estaciones de comida interactivas. Son el enfoque principal del negocio.</li>
+          </ul>
+          
+        </div>
+        <span class="bcg-badge">Enfoque principal</span>
+      </div>
+
+      <!-- INTERROGANTE -->
+      <div class="bcg-quadrant interrogante">
+        <div>
+          <div class="bcg-icon"><i class="fa-solid fa-circle-question"></i></div>
+          <div class="bcg-sub">Interrogantes</div>
+          <h4>Corporativos / Saludable / Temático</h4>
+          <ul>
+            <li>Eventos corporativos, catering saludable / vegano y experiencias temáticas.</li>
+            <li>Alto potencial, pero requieren inversión en marketing.</li>
+          </ul>
+         
+        </div>
+        <span class="bcg-badge">Necesitan inversión</span>
+      </div>
+
+      <!-- VACA -->
+      <div class="bcg-quadrant vaca">
+        <div>
+          <div class="bcg-icon"><i class="fa-solid fa-cow"></i></div>
+          <div class="bcg-sub">Vacas lecheras</div>
+          <h4>Fiestas tradicionales</h4>
+          <ul>
+            <li>Catering para cumpleaños, reuniones y eventos tradicionales</li>
+            <li>Generan ingresos constantes y predecibles</li>
+
+          </ul>
+          
+        </div>
+        <span class="bcg-badge">Ingresos constantes</span>
+      </div>
+
+      <!-- PERRO -->
+      <div class="bcg-quadrant perro">
+        <div>
+          <div class="bcg-icon"><i class="fa-solid fa-dog"></i></div>
+          <div class="bcg-sub">Perros</div>
+          <h4>Servicios básicos</h4>
+          <ul>
+            <li>Servicios sin diferenciación y eventos pequeños con bajo margen de rentabilidad.</li>
+          </ul>
+         
+        </div>
+        <span class="bcg-badge">No prioridad estratégica</span>
+      </div>
+
+      <div class="bcg-axis-x">Participación Relativa en el Mercado →</div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ CONCLUSIÓN ══ -->
+<section class="sec">
+  <div class="container">
+
+    <div class="sec-heading"><span>Conclusión</span> Estratégica</div>
+    <div class="gold-line"></div>
+
+    <div class="row g-4 fade-in-up">
+
+      <div class="col-lg-8">
+        <p style="color:rgba(255,255,255,.75);font-size:1rem;line-height:1.85;margin-bottom:28px;">
+          Proeventos Catering tiene un <strong style="color:var(--dorado);">alto potencial de crecimiento</strong>, ya que está alineado con tendencias actuales como la personalización, la innovación gastronómica y la experiencia del cliente. La estrategia debe orientarse a tres frentes clave:
+        </p>
+
+        <div class="row g-3">
+
+          <div class="col-md-4">
+            <div class="stat-card" style="border-top-color:var(--dorado);">
+              <div style="font-size:1.8rem;margin-bottom:10px;"><i class="fa-solid fa-star"></i></div>
+              <div class="lbl">Fortalecer las estrellas</div>
+              <div class="src">Bodas y eventos personalizados como motor principal de ingresos y posicionamiento</div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="stat-card" style="border-top-color:#66bb6a;">
+              <div style="font-size:1.8rem;margin-bottom:10px;"><i class="fa-solid fa-circle-question"></i>→<i class="fa-solid fa-sack-dollar"></i></div>
+              <div class="lbl">Convertir interrogantes</div>
+              <div class="src">Invertir en corporativos, saludable y temático para generar nuevas fuentes de ingreso</div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="stat-card" style="border-top-color:#42a5f5;">
+              <div style="font-size:1.8rem;margin-bottom:10px;"><i class="fa-solid fa-trophy"></i></div>
+              <div class="lbl">Diferenciarse constantemente</div>
+              <div class="src">Innovación continua, presencia digital sólida y propuesta de valor única frente a la competencia</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="stat-card" style="border-top-color:var(--dorado);padding:32px 24px;">
+          <div class="num" style="font-size:1.8rem;line-height:1.4;">Innovación<br><span style="color:#fff;font-size:1rem;font-weight:400;">+</span><br>Personalización<br><span style="color:#fff;font-size:1rem;font-weight:400;">+</span><br>Experiencia</div>
+          <div class="lbl" style="margin-top:16px;">La fórmula del crecimiento</div>
+          <div class="src" style="margin-top:8px;">Proeventos Catering está posicionado para crecer de forma progresiva y sostenida en el mercado local</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'ProEventos/js/tendenciasBCG.js' %}"></script>
+{% endblock %}

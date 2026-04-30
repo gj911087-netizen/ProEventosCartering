@@ -1,0 +1,193 @@
+{% extends "ProEventos/base.html" %}
+{% load static %}
+
+{% block title %}Modelo Canvas{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'ProEventos/css/canvas.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="tag">Planeación Estratégica</div>
+    <h1>Modelo <span>CANVAS</span></h1>
+    <p>Business Model Canvas completo — Proeventos S.A.S.</p>
+  </div>
+</section>
+
+<section class="canvas-section">
+  <div class="container-fluid px-4">
+
+    <div class="row mb-4">
+      <div class="col text-center">
+        <div class="sec-heading">Business Model <span>Canvas</span></div>
+        <div class="gold-line mx-auto"></div>
+        <p style="color:rgba(255,255,255,.55);font-size:.9rem;">
+          Modelo de negocio de Proeventos S.A.S.
+        </p>
+      </div>
+    </div>
+
+    <div class="canvas-perspective">
+      <div class="canvas-board fade-in-up">
+
+        <!-- GRID PRINCIPAL -->
+        <div class="canvas-grid">
+
+          <!-- 1 COSTOS -->
+          <div class="canvas-block b-aliados">
+            <span class="block-label">Costes de Estructura</span>
+            <h5>¿Cuánto cuesta?</h5>
+            <ul>
+              <li>Compra de materias primas</li>
+              <li>Transporte y logística</li>
+              <li>Sueldos del personal</li>
+              <li>Marketing y publicidad</li>
+              <li>Equipos y mantenimiento</li>
+              <li>Licencias y permisos legales</li>
+              <li>Tecnología (software y redes)</li>
+            </ul>
+            <span class="block-num">1</span>
+          </div>
+
+          <!-- 2 ACTIVIDADES -->
+          <div class="canvas-block b-activos">
+            <span class="block-label">Actividades Clave</span>
+            <h5>¿Qué hacemos?</h5>
+            <ul>
+              <li>Preparación de alimentos</li>
+              <li>Diseño de experiencias gastronómicas</li>
+              <li>Logística y montaje de eventos</li>
+              <li>Atención al cliente</li>
+              <li>Marketing digital</li>
+              <li>Gestión de proveedores e inventarios</li>
+            </ul>
+            <span class="block-num">2</span>
+          </div>
+
+          <!-- 3 PROPUESTA -->
+          <div class="canvas-block b-vp">
+            <span class="block-label">Propuesta de Valor</span>
+            <h5>¿Por qué elegirnos?</h5>
+
+            <div class="vp-value">
+              Ofrecemos experiencias gastronómicas memorables en bodas,
+              fiestas y celebraciones.
+            </div>
+
+            <ul>
+              <li>Estaciones de comida innovadoras</li>
+              <li>Presentaciones atractivas e interactivas</li>
+              <li>Servicio personalizado segun el cliente y su presupuesto</li>
+              <li>Alta calidad de ingredientes, sabor y montaje</li>
+              <li>No vendemos comida, vendemos experiencias únicas</li>
+            </ul>
+
+            <span class="block-num">VP</span>
+          </div>
+
+          <!-- 4 RELACIONES -->
+          <div class="canvas-block b-relaciones">
+            <span class="block-label">Relación Clientes</span>
+            <h5>Con los Clientes</h5>
+            <ul>
+              <li>Atención personalizada desde cotización</li>
+              <li>Asesoría en diseño del evento gastronómico</li>
+              <li>Seguimiento antes, durante y después del evento</li>
+              <li>Fidelización y recomendaciones</li>
+            </ul>
+            <span class="block-num">4</span>
+          </div>
+
+          <!-- 5 SEGMENTOS -->
+          <div class="canvas-block b-segmentos">
+            <span class="block-label">Segmentos Clientes</span>
+            <h5>¿A quién?</h5>
+            <ul>
+              <li>Personas que organizan bodas y fiestas privadas</li>
+              <li>Fiestas privadas</li>
+              <li>Empresas y eventos corporativos</li>
+              <li>Organizadores de eventos</li>
+              <li>Personas interesadas en opciones saludables o temáticas.</li>
+              <li>Clientes que buscan experiencias gastronómicas innovadoras.</li>
+            </ul>
+            <span class="block-num">5</span>
+          </div>
+
+          <!-- 6 SOCIOS -->
+          <div class="canvas-block b-actividades">
+            <span class="block-label">Socios Clave</span>
+            <h5>Aliados Estratégicos</h5>
+            <ul>
+              <li>Proveedores de alimentos e insumos </li>
+              <li>Organizadores de eventos</li>
+              <li>Decoradores y empresas de logistica</li>
+              <li>Plataformas digitales</li>
+              <li>Salones, fincas y hoteles</li>
+            </ul>
+            <span class="block-num">6</span>
+          </div>
+
+          <!-- 7 CANALES -->
+          <div class="canvas-block b-canales">
+            <span class="block-label">Canales</span>
+            <h5>¿Cómo llegamos?</h5>
+            <ul>
+              <li>Instagram, Facebook, TikTok</li>
+              <li>Recomendación voz a voz</li>
+              <li>Página web / WhatsApp</li>
+              <li>Ferias y eventos</li>
+              <li>Alianzas comerciales</li>
+            </ul>
+            <span class="block-num">7</span>
+          </div>
+
+        </div>
+
+        <!-- FILA INFERIOR -->
+        <div class="canvas-grid-bottom">
+
+          <!-- 8 INGRESOS -->
+          <div class="canvas-block b-costos">
+            <span class="block-label">Fuentes de Ingresos</span>
+            <h5>¿Cómo ganamos dinero?</h5>
+            <ul>
+              <li>Venta de servicios de catering para eventos.</li>
+              <li>Paquetes personalizados (según tipo de evento).</li>
+              <li>Servicios adicionales (decoración, montaje, logística).</li>
+              <li>Eventos empresariales y corporativos.</li>
+
+            </ul>
+            <span class="block-num">8</span>
+          </div>
+
+          <!-- 9 RECURSOS -->
+          <div class="canvas-block b-ingresos">
+            <span class="block-label">Recursos Clave</span>
+            <h5>¿Qué tenemos?</h5>
+            <ul>
+              <li>Equipo de cocina (chefs y personal).</li>
+              <li>Proveedores de alimentos e insumos.</li>
+              <li>Equipos de cocina y logística.</li>
+              <li>Conocimiento gastronómico y creatividad.</li>
+              <li>Marca y reputación.</li>
+              <li>Herramientas tecnológicas (software, redes sociales).</li>
+            </ul>
+            <span class="block-num">9</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'ProEventos/js/canvas.js' %}"></script>
+{% endblock %}
