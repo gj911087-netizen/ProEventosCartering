@@ -59,8 +59,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', # se agrago esta linea para que django puedira cargar los css, js ,html y imagenes 
   
 ]
+
 
 ROOT_URLCONF = 'Eventos.urls'
 
@@ -152,4 +154,10 @@ CSRF_TRUSTED_ORIGINS = [
  # confi de Ngrok
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
+
+
+#configuaracion para qie  Django que sirva los archivos CSS, JS e imágenes directamente. Sin esto, en producción esos archivos no cargan y la página sale sin diseño. 
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
