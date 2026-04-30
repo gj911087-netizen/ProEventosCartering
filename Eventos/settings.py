@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-=-gl3$o(&=sc_58xwt=q$9a0d49r&x&bh7o3wr4#_y_(zjy@a!
 DEBUG = True
 
 #este es la conficuracion para ejecutar  en ngrook
-ALLOWED_HOSTS = [".trycloudflare.com", "localhost", "127.0.0.1"]
+#ALLOWED_HOSTS = [".trycloudflare.com", "localhost", "127.0.0.1"]
+
+#esta es la configuracion de render para desplegar el proyecto 
+ALLOWED_HOSTS = ['proeventoscartering.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
