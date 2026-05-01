@@ -8,13 +8,14 @@
   });
 
   // ── Formulario ──
-  document.getElementById('contactForm').addEventListener('submit', function() {
+  const form = document.getElementById('contactForm');
 
+if (form) {
+  form.addEventListener('submit', function() {
     const toast = document.getElementById('toastConfirm');
     toast.classList.add('show');
-
-});
-
+  });
+}
   // ── Ocultar imágenes rotas en TODA la web ──
   // Cuando una imagen no carga, oculta el bloque contenedor (col, card, etc.)
   document.addEventListener('DOMContentLoaded', function() {
@@ -64,3 +65,15 @@
   });
 
 
+/* click cuando la pantalla esta pequeña sobre el menu */
+
+document.querySelectorAll('.navbar .dropdown > a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    const menu = this.nextElementSibling;
+
+    if (menu && menu.classList.contains('dropdown-menu')) {
+      e.preventDefault();
+      menu.classList.toggle('show');
+    }
+  });
+});
