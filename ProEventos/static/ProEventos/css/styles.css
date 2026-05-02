@@ -319,13 +319,19 @@
       padding: 12px 16px;
       font-size: .92rem;
     }
+    
     .contact-form-wrap .form-control:focus {
       background: rgba(255,255,255,.09);
       border-color: var(--dorado);
       box-shadow: 0 0 0 3px rgba(201,168,76,.15);
       color: var(--blanco);
     }
-    .contact-form-wrap .form-control::placeholder { color: rgba(255,255,255,.38); }
+    /* Opciones del select — fondo oscuro */
+    .contact-form-wrap .form-control option {
+      background: #0d0d2b;
+      color: #ffffff;
+    }
+    .contact-form-wrap .form-control::placeholder { color: rgba(255,255,255,.38);  }
     .contact-form-wrap label { color: rgba(255,255,255,.7); font-size: .85rem; margin-bottom: 6px; letter-spacing: .8px; text-transform: uppercase; }
     .btn-send {
       background: linear-gradient(135deg, var(--azul), var(--azul-medio));
@@ -358,7 +364,25 @@
     }
     .contact-info-item h6 { color: var(--dorado); font-size: .78rem; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
     .contact-info-item p { color: rgba(255,255,255,.7); font-size: .92rem; margin: 0; }
+    #heroCarousel .carousel-indicators {
+  bottom: 18px;
+  gap: 6px;
+}
 
+#heroCarousel .carousel-indicators button {
+  width: 36px !important;
+  height: 4px !important;
+  background: var(--dorado) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  opacity: 0.35 !important;
+  transition: opacity 0.4s ease, width 0.4s ease !important;
+}
+
+#heroCarousel .carousel-indicators button.active {
+  opacity: 1 !important;
+  width: 52px !important;
+}
     /* ══════════════════════════════════════
        FOOTER
     ══════════════════════════════════════ */

@@ -5,7 +5,6 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'ProEventos/css/inversion.css' %}">
-
 {% endblock %}
 
 {% block content %}
@@ -17,24 +16,24 @@
     <p>Gastos preoperativos, capital de trabajo, activos fijos y fuentes de financiación — Proeventos S.A.S.</p>
   </div>
 </section>
-<!--
+
 <section class="inv-section">
   <div class="container">
-
     <div class="row g-5">
-       Tablas 
+
+      <!-- ═══ TABLAS ═══ -->
       <div class="col-lg-8">
 
-        TABLA 1: GASTOS PREOPERATIVOS 
+        <!-- TABLA 1: INVERSIÓN REQUERIDA -->
         <div class="mb-5 fade-in-up">
-          <div class="sec-heading"><span>Gastos</span> Preoperativos</div>
+          <div class="sec-heading">Inversión <span>Requerida</span></div>
           <div class="gold-line"></div>
           <div class="inv-table-wrap">
             <div class="inv-table-title">
-              <div class="t-icon"><i class="bi bi-tools"></i></div>
+              <div class="t-icon"><i class="bi bi-currency-dollar"></i></div>
               <div>
-                <h6>Gastos Preoperativos</h6>
-                <span>Inversión inicial antes de iniciar operaciones</span>
+                <h6>Inversión Inicial</h6>
+                <span>Recursos para el funcionamiento administrativo, operativo y comercial</span>
               </div>
             </div>
             <table class="inv-table">
@@ -43,236 +42,219 @@
                   <th>Concepto</th>
                   <th>Descripción</th>
                   <th>Valor (COP)</th>
+                  <th style="text-align:right;">Part.</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Constitución empresa <span class="row-badge badge-alto">Legal</span></td>
-                  <td>Registro Cámara de Comercio, RUT, escritura</td>
-                  <td>$450,000</td>
+                  <td>Gastos preoperativos <span class="row-badge badge-med">Inicio</span></td>
+                  <td style="color:rgba(255,255,255,.6);font-size:.82rem;">Diseño de imagen corporativa, publicidad inicial, redes sociales, permisos y papelería empresarial.</td>
+                  <td>$1.500.000</td>
+                  <td style="text-align:right;"><span class="pct-pill" style="color:#26c6da;font-family:'Playfair Display',serif;font-weight:900;">15%</span></td>
                 </tr>
                 <tr>
-                  <td>Diseño de marca <span class="row-badge badge-med">Branding</span></td>
-                  <td>Logo, manual de identidad visual, papelería</td>
-                  <td>$1,200,000</td>
+                  <td>Capital de trabajo <span class="row-badge badge-alto">3 meses</span></td>
+                  <td style="color:rgba(255,255,255,.6);font-size:.82rem;">Cubre aproximadamente los primeros 3 meses de operación: compra inicial de insumos, empaques, transporte, servicios, caja menor y apoyo a nómina operativa.</td>
+                  <td>$3.000.000</td>
+                  <td style="text-align:right;"><span class="pct-pill" style="color:var(--dorado);font-family:'Playfair Display',serif;font-weight:900;">30%</span></td>
                 </tr>
                 <tr>
-                  <td>Desarrollo web <span class="row-badge badge-med">Digital</span></td>
-                  <td>Sitio web con formulario de cotización</td>
-                  <td>$2,500,000</td>
-                </tr>
-                <tr>
-                  <td>Fotografía portafolio <span class="row-badge badge-bajo">Contenido</span></td>
-                  <td>Sesión de fotos para portafolio inicial</td>
-                  <td>$800,000</td>
-                </tr>
-                <tr>
-                  <td>Licencias y permisos <span class="row-badge badge-alto">Legal</span></td>
-                  <td>SAYCO/ACINPRO, uso comercial de espacios</td>
-                  <td>$350,000</td>
-                </tr>
-                <tr>
-                  <td>Marketing lanzamiento <span class="row-badge badge-med">Mktg</span></td>
-                  <td>Campaña inicial Meta Ads y Google</td>
-                  <td>$1,500,000</td>
-                </tr>
-                <tr>
-                  <td>Capacitación equipo <span class="row-badge badge-bajo">RRHH</span></td>
-                  <td>Curso de event planning y protocolo</td>
-                  <td>$600,000</td>
+                  <td>Activos fijos <span class="row-badge badge-bajo">Equipo</span></td>
+                  <td style="color:rgba(255,255,255,.6);font-size:.82rem;">Horno de convección de 4 bandejas, nevera industrial de 300 litros, licuadora industrial de alta capacidad, estufa industrial y mesas de trabajo en acero inoxidable.</td>
+                  <td>$5.500.000</td>
+                  <td style="text-align:right;"><span class="pct-pill" style="color:#7c8fe8;font-family:'Playfair Display',serif;font-weight:900;">55%</span></td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
-                  <td colspan="2">TOTAL GASTOS PREOPERATIVOS</td>
-                  <td>$7,400,000</td>
+                  <td colspan="2">TOTAL INVERSIÓN REQUERIDA</td>
+                  <td>$10.000.000</td>
+                  <td style="text-align:right;color:var(--dorado);font-family:'Playfair Display',serif;font-size:1.05rem;">100%</td>
                 </tr>
               </tfoot>
             </table>
           </div>
         </div>
 
-         TABLA 2: CAPITAL DE TRABAJO
+        <!-- JUSTIFICACIÓN -->
         <div class="mb-5 fade-in-up">
-          <div class="sec-heading">Capital de <span>Trabajo</span></div>
+          <div class="sec-heading">Justificación de la <span>Inversión</span></div>
           <div class="gold-line"></div>
+          <div class="inv-table-wrap" style="padding:0;">
+
+            <div class="just-item">
+              <div class="just-icon" style="background:rgba(38,198,218,.1);border-color:rgba(38,198,218,.3);">
+                <i class="bi bi-building" style="color:#26c6da;"></i>
+              </div>
+              <div>
+                <div class="just-label" style="color:#26c6da;">Gastos Preoperativos</div>
+                <p class="just-text">Los gastos preoperativos son necesarios para el posicionamiento inicial de la empresa y la formalización básica del negocio.</p>
+              </div>
+            </div>
+
+            <div class="just-item">
+              <div class="just-icon" style="background:rgba(201,168,76,.1);border-color:rgba(201,168,76,.3);">
+                <i class="bi bi-cash-stack" style="color:var(--dorado);"></i>
+              </div>
+              <div>
+                <div class="just-label" style="color:var(--dorado);">Capital de Trabajo</div>
+                <p class="just-text">El capital de trabajo permitirá mantener la operación durante los primeros meses, asegurando liquidez para cubrir gastos operativos y contingencias iniciales.</p>
+              </div>
+            </div>
+
+            <div class="just-item" style="border-bottom:none;">
+              <div class="just-icon" style="background:rgba(57,73,171,.2);border-color:rgba(57,73,171,.4);">
+                <i class="bi bi-box-seam" style="color:#7c8fe8;"></i>
+              </div>
+              <div>
+                <div class="just-label" style="color:#7c8fe8;">Activos Fijos</div>
+                <p class="just-text">Los activos fijos representan la mayor inversión debido a la necesidad de contar con equipos y herramientas adecuadas que garanticen eficiencia, calidad y cumplimiento en eventos corporativos.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TABLA 2: FUENTES DE FINANCIACIÓN -->
+        <div class="mb-5 fade-in-up">
+          <div class="sec-heading">Fuentes de <span>Financiación</span></div>
+          <div class="gold-line"></div>
+          <p style="color:rgba(255,255,255,.55);font-size:.88rem;margin-bottom:28px;line-height:1.8;">
+            Con el objetivo de cubrir la inversión requerida, se plantean diferentes fuentes de financiación que permitan
+            distribuir adecuadamente el riesgo financiero y fortalecer el crecimiento empresarial.
+          </p>
           <div class="inv-table-wrap">
             <div class="inv-table-title">
-              <div class="t-icon"><i class="bi bi-cash-stack"></i></div>
+              <div class="t-icon"><i class="bi bi-bank"></i></div>
               <div>
-                <h6>Capital de Trabajo</h6>
-                <span>Recursos para los primeros 3 meses de operación</span>
+                <h6>Fuentes de Financiación</h6>
+                <span>Distribución estratégica del riesgo financiero</span>
               </div>
             </div>
             <table class="inv-table">
               <thead>
                 <tr>
-                  <th>Concepto</th>
-                  <th>Mensual (COP)</th>
-                  <th>3 meses (COP)</th>
+                  <th>Fuente de financiación</th>
+                  <th>Part.</th>
+                  <th>Valor (COP)</th>
+                  <th>Detalle</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Nómina coordinador principal <span class="row-badge badge-alto">Fijo</span></td>
-                  <td>$1,800,000</td>
-                  <td>$5,400,000</td>
+                  <td>Capital propio de los socios <span class="row-badge badge-bajo">Propio</span></td>
+                  <td><span style="color:#66bb6a;font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;">50%</span></td>
+                  <td>$5.000.000</td>
+                  <td style="color:rgba(255,255,255,.6);font-size:.82rem;">El aporte será dividido en partes iguales entre los socios del proyecto, fortaleciendo el compromiso y respaldo financiero.</td>
                 </tr>
                 <tr>
-                  <td>Nómina asistente logístico <span class="row-badge badge-alto">Fijo</span></td>
-                  <td>$1,100,000</td>
-                  <td>$3,300,000</td>
+                  <td>Préstamo bancario <span class="row-badge badge-med">Crédito</span></td>
+                  <td><span style="color:#ef5350;font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;">30%</span></td>
+                  <td>$3.000.000</td>
+                  <td style="color:rgba(255,255,255,.6);font-size:.82rem;">Se contempla un microcrédito empresarial con una tasa de interés promedio aproximada entre el 1.8% y 2.2% mensual en entidades financieras colombianas.</td>
                 </tr>
                 <tr>
-                  <td>Arriendo oficina / coworking <span class="row-badge badge-med">Fijo</span></td>
-                  <td>$600,000</td>
-                  <td>$1,800,000</td>
-                </tr>
-                <tr>
-                  <td>Marketing digital mensual <span class="row-badge badge-med">Variable</span></td>
-                  <td>$400,000</td>
-                  <td>$1,200,000</td>
-                </tr>
-                <tr>
-                  <td>Servicios públicos y comunicaciones <span class="row-badge badge-bajo">Fijo</span></td>
-                  <td>$200,000</td>
-                  <td>$600,000</td>
-                </tr>
-                <tr>
-                  <td>Imprevistos y fondo emergencia <span class="row-badge badge-bajo">Reserva</span></td>
-                  <td>$300,000</td>
-                  <td>$900,000</td>
+                  <td>Inversionista externo <span class="row-badge badge-alto">Externo</span></td>
+                  <td><span style="color:#ab47bc;font-family:'Playfair Display',serif;font-weight:900;font-size:1rem;">20%</span></td>
+                  <td>$2.000.000</td>
+                  <td style="color:rgba(255,255,255,.6);font-size:.82rem;">Participación destinada a fortalecer la capacidad operativa y comercial en la etapa inicial.</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
-                  <td colspan="2">TOTAL CAPITAL DE TRABAJO (3 meses)</td>
-                  <td>$13,200,000</td>
+                  <td>TOTAL FINANCIACIÓN</td>
+                  <td style="text-align:left;color:var(--dorado);font-family:'Playfair Display',serif;font-size:1.05rem;">100%</td>
+                  <td>$10.000.000</td>
+                  <td></td>
                 </tr>
               </tfoot>
             </table>
           </div>
         </div>
 
-       TABLA 3: ACTIVOS FIJOS
+        <!-- PROYECCIÓN DE RENTABILIDAD -->
         <div class="fade-in-up">
-          <div class="sec-heading">Activos <span>Fijos</span></div>
+          <div class="sec-heading">Proyección de <span>Rentabilidad</span></div>
           <div class="gold-line"></div>
-          <div class="inv-table-wrap">
-            <div class="inv-table-title">
-              <div class="t-icon"><i class="bi bi-laptop"></i></div>
-              <div>
-                <h6>Activos Fijos</h6>
-                <span>Bienes tangibles e intangibles de largo plazo</span>
+          <div class="inv-table-wrap" style="padding:32px 28px;">
+            <div style="display:flex;align-items:flex-start;gap:20px;">
+              <div style="flex-shrink:0;width:46px;height:46px;border:1px solid rgba(201,168,76,.35);display:flex;align-items:center;justify-content:center;color:var(--dorado);font-size:1.3rem;">
+                <i class="bi bi-graph-up-arrow"></i>
               </div>
+              <p style="color:rgba(255,255,255,.72);font-size:.93rem;line-height:1.9;margin:0;">
+                Se estima que la empresa alcance <strong style="color:#fff;">estabilidad operativa durante los primeros seis meses</strong>
+                de funcionamiento, logrando recuperar progresivamente la inversión inicial mediante contratos corporativos,
+                eventos empresariales y servicios sociales. La estrategia comercial estará enfocada en la
+                <strong style="color:var(--dorado);">calidad del servicio, cumplimiento y atención personalizada</strong>,
+                factores que contribuirán al crecimiento y posicionamiento de la marca.
+              </p>
             </div>
-            <table class="inv-table">
-              <thead>
-                <tr>
-                  <th>Activo</th>
-                  <th>Especificación</th>
-                  <th>Valor (COP)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Computador portátil <span class="row-badge badge-alto">Esencial</span></td>
-                  <td>MacBook Air o similar (16GB RAM)</td>
-                  <td>$3,200,000</td>
-                </tr>
-                <tr>
-                  <td>Smartphone <span class="row-badge badge-alto">Esencial</span></td>
-                  <td>Para gestión de clientes y contenido RRSS</td>
-                  <td>$1,800,000</td>
-                </tr>
-                <tr>
-                  <td>Cámara fotográfica <span class="row-badge badge-med">Operativo</span></td>
-                  <td>Sony ZV-E10 o Canon M50 II para contenido</td>
-                  <td>$1,500,000</td>
-                </tr>
-                <tr>
-                  <td>Impresora / escáner <span class="row-badge badge-bajo">Oficina</span></td>
-                  <td>Para contratos y documentación de clientes</td>
-                  <td>$400,000</td>
-                </tr>
-                <tr>
-                  <td>Software y herramientas <span class="row-badge badge-med">Digital</span></td>
-                  <td>Canva Pro, Adobe, herramienta de gestión</td>
-                  <td>$500,000</td>
-                </tr>
-                <tr>
-                  <td>Muestras decorativas <span class="row-badge badge-bajo">Portafolio</span></td>
-                  <td>Kit de muestra para presentaciones a clientes</td>
-                  <td>$700,000</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="2">TOTAL ACTIVOS FIJOS</td>
-                  <td>$8,100,000</td>
-                </tr>
-              </tfoot>
-            </table>
           </div>
         </div>
 
       </div>
 
-       Gráfico + Resumen 
+      <!-- ═══ GRÁFICO + SIDEBAR ═══ -->
       <div class="col-lg-4">
 
-        Total general 
+        <!-- Total general -->
         <div class="total-card mb-4 fade-in-up">
           <div class="lbl">Inversión Total Requerida</div>
-          <span class="amount">$28.7M</span>
-          <p>Suma de gastos preoperativos ($7.4M), capital de trabajo para 3 meses ($13.2M) y activos fijos ($8.1M). Financiada por tres fuentes estratégicas.</p>
+          <span class="amount">$10M</span>
+          <p>
+            Activos fijos ($5.5M · 55%), capital de trabajo 3 meses
+            ($3M · 30%) y gastos preoperativos ($1.5M · 15%).
+            Financiada por tres fuentes estratégicas.
+          </p>
         </div>
 
-        Gráfico de distribución 
+        <!-- Gráfico donuts -->
         <div class="chart-section fade-in-up">
           <h6 style="font-family:'Playfair Display',serif;color:var(--dorado);font-size:1rem;margin-bottom:20px;">Distribución de la Inversión</h6>
+
           <div class="donut-wrap">
             <canvas id="donutChart"></canvas>
             <div class="donut-center">
-              <span class="total">$28.7M</span>
+              <span class="total">$10M</span>
               <span class="lbl">Total COP</span>
             </div>
           </div>
-           Leyenda 
+
+          <!-- Leyenda inversión -->
           <div class="mt-2">
-            <div class="legend-item">
-              <div class="legend-dot" style="background:#c9a84c;"></div>
-              <span class="legend-name">Capital de Trabajo</span>
-              <span class="legend-pct" style="color:var(--dorado);">46%</span>
-            </div>
             <div class="legend-item">
               <div class="legend-dot" style="background:#3949ab;"></div>
               <span class="legend-name">Activos Fijos</span>
-              <span class="legend-pct" style="color:#7c8fe8;">28%</span>
+              <span class="legend-pct" style="color:#7c8fe8;">55%</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-dot" style="background:#c9a84c;"></div>
+              <span class="legend-name">Capital de Trabajo</span>
+              <span class="legend-pct" style="color:var(--dorado);">30%</span>
             </div>
             <div class="legend-item">
               <div class="legend-dot" style="background:#26c6da;"></div>
               <span class="legend-name">Gastos Preoperativos</span>
-              <span class="legend-pct" style="color:#26c6da;">26%</span>
+              <span class="legend-pct" style="color:#26c6da;">15%</span>
             </div>
           </div>
 
-           Fuentes de financiación 
+          <!-- Fuentes de financiación -->
           <div class="mt-4 pt-4" style="border-top:1px solid rgba(255,255,255,.07);">
             <h6 style="font-family:'Playfair Display',serif;color:var(--dorado);font-size:.9rem;margin-bottom:16px;">Fuentes de Financiación</h6>
             <div class="legend-item">
               <div class="legend-dot" style="background:#66bb6a;border-radius:50%;"></div>
-              <span class="legend-name" style="font-size:.82rem;">Capital propio socios</span>
+              <span class="legend-name" style="font-size:.82rem;">Capital propio de los socios</span>
               <span class="legend-pct" style="color:#66bb6a;font-size:.95rem;">50%</span>
             </div>
             <div class="legend-item">
               <div class="legend-dot" style="background:#ef5350;border-radius:50%;"></div>
-              <span class="legend-name" style="font-size:.82rem;">Crédito bancario PYME</span>
+              <span class="legend-name" style="font-size:.82rem;">Préstamo bancario</span>
               <span class="legend-pct" style="color:#ef5350;font-size:.95rem;">30%</span>
             </div>
             <div class="legend-item">
               <div class="legend-dot" style="background:#ab47bc;border-radius:50%;"></div>
-              <span class="legend-name" style="font-size:.82rem;">Fondo Emprender SENA</span>
+              <span class="legend-name" style="font-size:.82rem;">Inversionista externo</span>
               <span class="legend-pct" style="color:#ab47bc;font-size:.95rem;">20%</span>
             </div>
           </div>
@@ -280,17 +262,12 @@
 
       </div>
     </div>
-
   </div>
 </section>
--->
 
 {% endblock %}
 
 {% block extra_js %}
-
-<!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="{% static 'ProEventos/js/inversion.js' %}"></script>
-
 {% endblock %}

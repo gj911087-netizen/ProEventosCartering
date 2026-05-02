@@ -1,0 +1,275 @@
+{% extends "ProEventos/base.html" %}
+{% load static %}
+
+{% block title %}Referencias Bibliográficas{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'ProEventos/css/referencias.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="tag">Fuentes & Bibliografía</div>
+    <h1>Referencias <span>Bibliográficas</span></h1>
+    <p>Fuentes académicas, institucionales y digitales consultadas en el desarrollo del proyecto — Proeventos Catering</p>
+  </div>
+</section>
+
+<!-- ══ REFERENCIAS ══ -->
+<section class="sec">
+  <div class="container">
+
+    <div class="sec-heading">Fuentes <span>Consultadas</span></div>
+    <div class="gold-line"></div>
+    <p class="sec-intro">
+      Las siguientes referencias sustentan el análisis estratégico, financiero y de mercado
+      desarrollado para Proeventos Catering, bajo formato APA 7.ª edición.
+    </p>
+
+    <!-- FILTROS -->
+    <div class="ref-filters fade-in-up">
+      <button class="ref-filter-btn active" data-filter="all">Todas</button>
+      <button class="ref-filter-btn" data-filter="libro">Libros</button>
+      <button class="ref-filter-btn" data-filter="institucional">Institucional</button>
+      <button class="ref-filter-btn" data-filter="digital">Digital / Web</button>
+    </div>
+
+    <!-- CONTADOR -->
+    <div class="ref-count fade-in-up">
+      <span id="refCount">10</span> referencias encontradas
+    </div>
+
+    <!-- LISTA DE REFERENCIAS -->
+    <div class="ref-list" id="refList">
+
+      <!-- 1 -->
+      <div class="ref-card fade-in-up" data-type="libro">
+        <div class="ref-num">01</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-libro">Libro</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            American Psychological Association. (2020).
+            <em>Publication manual of the American Psychological Association</em>
+            (7.ª ed.). APA.
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-building-columns"></i> American Psychological Association</span>
+            <span><i class="fa-solid fa-calendar"></i> 2020</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="ref-card fade-in-up" data-type="institucional">
+        <div class="ref-num">02</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-inst">Institucional</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            Organización Internacional del Trabajo (OIT). (2023).
+            <em>Condiciones de trabajo y sostenibilidad en el sector de la hostelería y alimentación.</em>
+            Oficina Regional para América Latina y el Caribe.
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-globe"></i> OIT — Oficina Regional ALC</span>
+            <span><i class="fa-solid fa-calendar"></i> 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="ref-card fade-in-up" data-type="institucional">
+        <div class="ref-num">03</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-inst">Institucional</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            Ministerio de Trabajo y Seguridad Social (Colombia). (2025).
+            <em>Leyes laborales y derechos de los trabajadores en sectores de servicios.</em>
+            Gobierno de Colombia.
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-landmark"></i> Ministerio de Trabajo — Colombia</span>
+            <span><i class="fa-solid fa-calendar"></i> 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="ref-card fade-in-up" data-type="institucional">
+        <div class="ref-num">04</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-inst">Institucional</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            Confederación Nacional de Cámaras de Comercio. (2024).
+            <em>Análisis de presupuestos corporativos y demanda de servicios para eventos.</em>
+            CONFECÁMARAS.
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-briefcase"></i> CONFECÁMARAS</span>
+            <span><i class="fa-solid fa-calendar"></i> 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="ref-card fade-in-up" data-type="institucional">
+        <div class="ref-num">05</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-inst">Institucional</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            Deloitte. (2024).
+            <em>Marketing digital y análisis de datos para la diferenciación de servicios empresariales.</em>
+            Deloitte Insights.
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-chart-line"></i> Deloitte Insights</span>
+            <span><i class="fa-solid fa-calendar"></i> 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="ref-card fade-in-up" data-type="libro">
+        <div class="ref-num">06</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-libro">Libro</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            Kotler, P., &amp; Keller, K. L. (2022).
+            <em>Dirección de marketing</em>
+            (17.ª ed.). Pearson Educación.
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-book"></i> Pearson Educación</span>
+            <span><i class="fa-solid fa-calendar"></i> 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="ref-card fade-in-up" data-type="libro">
+        <div class="ref-num">07</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-libro">Libro</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            Muñoz, G. (2022).
+            <em>Marketing para pymes de servicios: Estrategias prácticas para crecer y diferenciarse.</em>
+            Editorial Ecoe.
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-book"></i> Editorial Ecoe</span>
+            <span><i class="fa-solid fa-calendar"></i> 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="ref-card fade-in-up" data-type="libro">
+        <div class="ref-num">08</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-libro">Libro</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            Kotler, P., Kartajaya, H., &amp; Setiawan, I. (2023).
+            <em>Marketing 5.0: Tecnología para la humanidad.</em>
+            Wiley. (Capítulos sobre puntos de contacto con el cliente y espacios de experiencia).
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-book"></i> Wiley</span>
+            <span><i class="fa-solid fa-calendar"></i> 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="ref-card fade-in-up" data-type="digital">
+        <div class="ref-num">09</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-web">Digital / Web</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            Alonso, M. (2026, abril 30).
+            <em>Business model canvas: qué es y cómo hacerlo [2026].</em>
+            Asana.
+            <a href="https://asana.com/es/resources/business-model-canvas" target="_blank" rel="noopener" class="ref-link">
+              https://asana.com/es/resources/business-model-canvas
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-globe"></i> Asana</span>
+            <span><i class="fa-solid fa-calendar"></i> 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="ref-card fade-in-up" data-type="digital">
+        <div class="ref-num">10</div>
+        <div class="ref-body">
+          <div class="ref-tags">
+            <span class="ref-tag tag-web">Digital / Web</span>
+            <span class="ref-tag tag-apa">APA 7</span>
+          </div>
+          <p class="ref-text">
+            Stepanets, A., &amp; Stepanets, A. (2026, 14 abril).
+            <em>Tipos de indicadores de gestión con ejemplos.</em>
+            Gantt Chart GanttPRO Blog.
+            <a href="https://blog.ganttpro.com/es/indicador-de-gestion/amp/" target="_blank" rel="noopener" class="ref-link">
+              https://blog.ganttpro.com/es/indicador-de-gestion/amp/
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </p>
+          <div class="ref-meta">
+            <span><i class="fa-solid fa-globe"></i> GanttPRO Blog</span>
+            <span><i class="fa-solid fa-calendar"></i> 2026</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /ref-list -->
+
+    <!-- NOTA APA -->
+    <div class="ref-nota fade-in-up">
+      <i class="fa-solid fa-circle-info ref-nota-ico"></i>
+      <p>
+        Todas las referencias están citadas bajo el formato
+        <strong>APA 7.ª edición</strong> (American Psychological Association, 2020).
+        Los títulos de libros e informes aparecen en <em>cursiva</em>;
+        los artículos de revista, en redonda con la revista en cursiva.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'ProEventos/js/referencias.js' %}"></script>
+{% endblock %}

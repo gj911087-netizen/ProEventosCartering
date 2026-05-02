@@ -5,7 +5,6 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'ProEventos/css/kpis.css' %}">
-
 {% endblock %}
 
 {% block content %}
@@ -14,77 +13,78 @@
   <div class="container">
     <div class="tag">Planeación Estratégica</div>
     <h1>Indicadores <span>KPI's</span></h1>
-    <p>6 Indicadores Clave de Desempeño con métrica objetivo, fórmula y justificación — Proeventos S.A.S.</p>
+    <p>KPI's seleccionados y su aplicación — Proeventos S.A.S.</p>
   </div>
 </section>
 
 <section class="kpi-section">
   <div class="container">
-    <div class="sec-heading">Indicadores Clave de <span>Desempeño</span></div>
+    <div class="sec-heading">KPI's Seleccionados y su <span>Aplicación</span></div>
     <div class="gold-line"></div>
 
+    <!-- ═══ 4 KPI CARDS ═══ -->
     <div class="row g-4">
 
-      <!-- 
-      <div class="col-lg-4 col-md-6 fade-in-up">
+      <!-- KPI 1 -->
+      <div class="col-lg-6 col-md-6 fade-in-up">
         <div class="kpi-card k1">
           <div class="kpi-header">
             <div class="kpi-icon"><i class="bi bi-currency-dollar"></i></div>
             <div class="kpi-header-text">
               <span class="kpi-num">KPI 01</span>
-              <h5>Ingresos Mensuales</h5>
+              <h5>Ingreso Promedio por Evento</h5>
             </div>
           </div>
           <div class="kpi-metric">
-            <span class="metric-value">$18M</span>
-            <span class="metric-label">COP por mes como meta para el primer año</span>
+            <span class="metric-value">Ingresos</span>
+            <span class="metric-label">totales ÷ número de eventos realizados</span>
           </div>
           <div class="kpi-progress">
-            <div class="prog-labels"><span>Actual estimado</span><span>Meta: $18M</span></div>
-            <div class="prog-track"><div class="prog-fill" data-width="45"></div></div>
+            <div class="prog-labels"><span>Tipo: Cuantitativo</span><span>Estratégico</span></div>
+            <div class="prog-track"><div class="prog-fill" data-width="65"></div></div>
           </div>
           <div class="kpi-body">
             <div class="formula-box">
               <span class="formula-label">Fórmula</span>
-              Ingresos = N.º Eventos × Ticket Promedio
+              Ingreso por Evento = Ingresos Totales / N.º Eventos
             </div>
-            <p class="justification">Permite monitorear la generación de caja mes a mes. Con un ticket promedio de $3M y 6 eventos al mes se alcanza la meta. Es el KPI más crítico para la sostenibilidad del negocio en la etapa inicial.</p>
-            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Mensual</span>
+            <p class="justification">Este indicador muestra cuánto dinero se obtiene, en promedio, por cada evento realizado. Permite identificar qué servicios son más rentables y si los precios están bien definidos. Con esto, la empresa puede ajustar sus paquetes y enfocarse en los servicios que generan mayor ganancia.</p>
+            <span class="freq-badge"><i class="bi bi-bar-chart me-1"></i> Cuantitativo · De resultado</span>
           </div>
         </div>
       </div>
 
-      KPI 2
-      <div class="col-lg-4 col-md-6 fade-in-up">
+      <!-- KPI 2 -->
+      <div class="col-lg-6 col-md-6 fade-in-up">
         <div class="kpi-card k2">
           <div class="kpi-header">
             <div class="kpi-icon"><i class="bi bi-people-fill"></i></div>
             <div class="kpi-header-text">
               <span class="kpi-num">KPI 02</span>
-              <h5>Tasa de Conversión</h5>
+              <h5>Conversión de Clientes</h5>
             </div>
           </div>
           <div class="kpi-metric">
-            <span class="metric-value">35%</span>
-            <span class="metric-label">de cotizaciones que se convierten en contratos</span>
+            <span class="metric-value">Ventas</span>
+            <span class="metric-label">sobre total de interesados en el servicio</span>
           </div>
           <div class="kpi-progress">
-            <div class="prog-labels"><span>Estándar sector: 20%</span><span>Meta: 35%</span></div>
-            <div class="prog-track"><div class="prog-fill" data-width="60"></div></div>
+            <div class="prog-labels"><span>Tipo: Cuantitativo</span><span>Predictivo</span></div>
+            <div class="prog-track"><div class="prog-fill" data-width="55"></div></div>
           </div>
           <div class="kpi-body">
             <div class="formula-box">
               <span class="formula-label">Fórmula</span>
-              Tasa = (Contratos / Cotizaciones) × 100
+              Conversión = (Clientes que compran / Total interesados) × 100
             </div>
-            <p class="justification">Una tasa del 35% está por encima del promedio del sector (≈20%) e indica que el proceso de ventas y la propuesta de valor son efectivos. Se optimiza con seguimiento por WhatsApp y reuniones de cotización personalizadas.</p>
-            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Mensual</span>
+            <p class="justification">Este KPI indica qué porcentaje de personas interesadas termina contratando el servicio. Es útil para evaluar qué tan efectivas son las estrategias de venta. Ayuda a mejorar la atención, las cotizaciones y la presencia en redes sociales.</p>
+            <span class="freq-badge"><i class="bi bi-graph-up me-1"></i> Cuantitativo · Predictivo</span>
           </div>
         </div>
       </div>
 
-      KPI 3
-      <div class="col-lg-4 col-md-6 fade-in-up">
+      <!-- KPI 3 -->
+      <div class="col-lg-6 col-md-6 fade-in-up">
         <div class="kpi-card k3">
           <div class="kpi-header">
             <div class="kpi-icon"><i class="bi bi-star-fill"></i></div>
@@ -94,119 +94,203 @@
             </div>
           </div>
           <div class="kpi-metric">
-            <span class="metric-value">4.8</span>
-            <span class="metric-label">/ 5.0 en encuesta NPS post-evento</span>
+            <span class="metric-value">Opinión</span>
+            <span class="metric-label">del cliente evaluada post-evento</span>
           </div>
           <div class="kpi-progress">
-            <div class="prog-labels"><span>Mín. aceptable: 4.0</span><span>Meta: 4.8/5.0</span></div>
+            <div class="prog-labels"><span>Tipo: Cualitativo</span><span>Eficacia</span></div>
             <div class="prog-track"><div class="prog-fill" data-width="80"></div></div>
           </div>
           <div class="kpi-body">
             <div class="formula-box">
               <span class="formula-label">Fórmula</span>
-              NPS = % Promotores − % Detractores
+              Encuesta: comida + servicio + presentación → promedio
             </div>
-            <p class="justification">La satisfacción del cliente es el principal motor de referidos en el sector eventos. Un NPS alto (>4.8) garantiza recomendaciones orgánicas que reducen el costo de adquisición en un 30% aproximadamente. Se mide con encuesta 48h post-evento.</p>
-            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Por evento</span>
+            <p class="justification">Este indicador permite conocer la opinión del cliente después del evento. Es clave, ya que la recomendación influye directamente en el crecimiento del negocio. Permite identificar mejoras y fortalecer la experiencia del cliente.</p>
+            <span class="freq-badge"><i class="bi bi-emoji-smile me-1"></i> Cualitativo · De resultado</span>
           </div>
         </div>
       </div>
 
-       KPI 4
-      <div class="col-lg-4 col-md-6 fade-in-up">
+      <!-- KPI 4 -->
+      <div class="col-lg-6 col-md-6 fade-in-up">
         <div class="kpi-card k4">
           <div class="kpi-header">
-            <div class="kpi-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <div class="kpi-icon"><i class="bi bi-calculator"></i></div>
             <div class="kpi-header-text">
               <span class="kpi-num">KPI 04</span>
-              <h5>Margen Operacional</h5>
+              <h5>Costo por Evento</h5>
             </div>
           </div>
           <div class="kpi-metric">
-            <span class="metric-value">28%</span>
-            <span class="metric-label">de margen neto sobre ingresos totales</span>
+            <span class="metric-value">Costos</span>
+            <span class="metric-label">totales divididos entre los eventos realizados</span>
           </div>
           <div class="kpi-progress">
-            <div class="prog-labels"><span>Mín. viable: 20%</span><span>Meta: 28%</span></div>
-            <div class="prog-track"><div class="prog-fill" data-width="55"></div></div>
+            <div class="prog-labels"><span>Tipo: Cuantitativo</span><span>Eficiencia</span></div>
+            <div class="prog-track"><div class="prog-fill" data-width="50"></div></div>
           </div>
           <div class="kpi-body">
             <div class="formula-box">
               <span class="formula-label">Fórmula</span>
-              Margen = (Utilidad Neta / Ingresos) × 100
+              Costo por Evento = Costos Totales / N.º Eventos
             </div>
-            <p class="justification">El margen del 28% es el umbral que garantiza rentabilidad real después de cubrir nómina, proveedores y marketing. Permite reinversión en crecimiento. Se optimiza con economías de escala en proveedores y paquetes de mayor ticket.</p>
-            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Trimestral</span>
-          </div>
-        </div>
-      </div>
-
-      KPI 5
-      <div class="col-lg-4 col-md-6 fade-in-up">
-        <div class="kpi-card k5">
-          <div class="kpi-header">
-            <div class="kpi-icon"><i class="bi bi-instagram"></i></div>
-            <div class="kpi-header-text">
-              <span class="kpi-num">KPI 05</span>
-              <h5>Alcance Digital</h5>
-            </div>
-          </div>
-          <div class="kpi-metric">
-            <span class="metric-value">5K</span>
-            <span class="metric-label">seguidores activos en Instagram al año 1</span>
-          </div>
-          <div class="kpi-progress">
-            <div class="prog-labels"><span>Inicio estimado: 800</span><span>Meta: 5,000</span></div>
-            <div class="prog-track"><div class="prog-fill" data-width="38"></div></div>
-          </div>
-          <div class="kpi-body">
-            <div class="formula-box">
-              <span class="formula-label">Fórmula</span>
-              Crecimiento = ((F2 − F1) / F1) × 100
-            </div>
-            <p class="justification">El 68% de los clientes de eventos llega por recomendación en redes sociales. Crecer a 5K seguidores activos (con tasa de engagement >4%) genera un flujo constante de cotizaciones orgánicas sin depender únicamente de publicidad paga.</p>
-            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Mensual</span>
-          </div>
-        </div>
-      </div>
-
-       KPI 6
-      <div class="col-lg-4 col-md-6 fade-in-up">
-        <div class="kpi-card k6">
-          <div class="kpi-header">
-            <div class="kpi-icon"><i class="bi bi-arrow-repeat"></i></div>
-            <div class="kpi-header-text">
-              <span class="kpi-num">KPI 06</span>
-              <h5>Tasa de Clientes Referidos</h5>
-            </div>
-          </div>
-          <div class="kpi-metric">
-            <span class="metric-value">40%</span>
-            <span class="metric-label">de nuevos clientes provenientes de referidos</span>
-          </div>
-          <div class="kpi-progress">
-            <div class="prog-labels"><span>Año 1 estimado: 15%</span><span>Meta: 40%</span></div>
-            <div class="prog-track"><div class="prog-fill" data-width="37"></div></div>
-          </div>
-          <div class="kpi-body">
-            <div class="formula-box">
-              <span class="formula-label">Fórmula</span>
-              Referidos% = (Clientes referidos / Total clientes) × 100
-            </div>
-            <p class="justification">Los referidos tienen un costo de adquisición 5× menor que los clientes por publicidad paga y una tasa de cierre un 70% mayor. Alcanzar el 40% de referidos al año 3 indica que el programa de fidelización y la calidad del servicio funcionan.</p>
-            <span class="freq-badge"><i class="bi bi-calendar3 me-1"></i> Frecuencia: Trimestral</span>
+            <p class="justification">Este KPI muestra cuánto cuesta realizar cada evento, teniendo en cuenta todos los gastos. Es fundamental para controlar las finanzas y asegurar la rentabilidad. Permite a la empresa gestionar mejor sus recursos y márgenes.</p>
+            <span class="freq-badge"><i class="bi bi-cash-coin me-1"></i> Cuantitativo · Eficiencia</span>
           </div>
         </div>
       </div>
 
     </div>
+
+    <!-- ═══ CLASIFICACIÓN DE KPI's ═══ -->
+    <div class="mt-5 pt-4 fade-in-up">
+      <div class="sec-heading mt-4">Clasificación de los KPI's en <span>Proeventos</span></div>
+      <div class="gold-line"></div>
+
+      <div class="row g-4">
+
+        <!-- Cualitativos y cuantitativos -->
+        <div class="col-lg-6 fade-in-up">
+          <div class="clas-card">
+            <div class="clas-header">
+              <div class="clas-icon" style="background:rgba(201,168,76,.1);border-color:rgba(201,168,76,.3);color:var(--dorado);">
+                <i class="bi bi-toggles"></i>
+              </div>
+              <div>
+                <span class="clas-tag" style="color:var(--dorado);">Clasificación 01</span>
+                <h6>Cualitativos y Cuantitativos</h6>
+              </div>
+            </div>
+            <div class="clas-body">
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(102,187,106,.12);color:#66bb6a;">Cualitativo</span>
+                <span>Satisfacción del cliente</span>
+              </div>
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(66,165,245,.12);color:#42a5f5;">Cuantitativos</span>
+                <span>Ingreso por evento, conversión de clientes y costo por evento</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Predictivos y de resultado -->
+        <div class="col-lg-6 fade-in-up">
+          <div class="clas-card">
+            <div class="clas-header">
+              <div class="clas-icon" style="background:rgba(66,165,245,.1);border-color:rgba(66,165,245,.3);color:#42a5f5;">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div>
+                <span class="clas-tag" style="color:#42a5f5;">Clasificación 02</span>
+                <h6>Predictivos y de Resultado</h6>
+              </div>
+            </div>
+            <div class="clas-body">
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(171,71,188,.12);color:#ab47bc;">Predictivo</span>
+                <span>Conversión de clientes (permite anticipar ventas)</span>
+              </div>
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(239,83,80,.12);color:#ef5350;">De resultado</span>
+                <span>Ingreso por evento y costo por evento (muestran resultados reales)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eficiencia y eficacia -->
+        <div class="col-lg-6 fade-in-up">
+          <div class="clas-card">
+            <div class="clas-header">
+              <div class="clas-icon" style="background:rgba(102,187,106,.1);border-color:rgba(102,187,106,.3);color:#66bb6a;">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <div>
+                <span class="clas-tag" style="color:#66bb6a;">Clasificación 03</span>
+                <h6>Eficiencia y Eficacia</h6>
+              </div>
+            </div>
+            <div class="clas-body">
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(38,198,218,.12);color:#26c6da;">Eficiencia</span>
+                <span>Costo por evento (uso adecuado de recursos)</span>
+              </div>
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(102,187,106,.12);color:#66bb6a;">Eficacia</span>
+                <span>Satisfacción del cliente (cumplimiento de expectativas)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entrada, proceso, salida y resultado -->
+        <div class="col-lg-6 fade-in-up">
+          <div class="clas-card">
+            <div class="clas-header">
+              <div class="clas-icon" style="background:rgba(239,83,80,.1);border-color:rgba(239,83,80,.3);color:#ef5350;">
+                <i class="bi bi-arrow-right-circle"></i>
+              </div>
+              <div>
+                <span class="clas-tag" style="color:#ef5350;">Clasificación 04</span>
+                <h6>Entrada, Proceso, Salida y Resultado</h6>
+              </div>
+            </div>
+            <div class="clas-body">
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(201,168,76,.12);color:var(--dorado);">Entrada</span>
+                <span>Costos e insumos (relacionados con costo por evento)</span>
+              </div>
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(66,165,245,.12);color:#42a5f5;">Proceso</span>
+                <span>Organización y ejecución del servicio</span>
+              </div>
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(171,71,188,.12);color:#ab47bc;">Salida</span>
+                <span>Evento realizado</span>
+              </div>
+              <div class="clas-item">
+                <span class="clas-badge" style="background:rgba(102,187,106,.12);color:#66bb6a;">Resultado</span>
+                <span>Satisfacción del cliente e ingresos generados</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estratégicos y operativos -->
+        <div class="col-lg-12 fade-in-up">
+          <div class="clas-card">
+            <div class="clas-header">
+              <div class="clas-icon" style="background:rgba(38,198,218,.1);border-color:rgba(38,198,218,.3);color:#26c6da;">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div>
+                <span class="clas-tag" style="color:#26c6da;">Clasificación 05</span>
+                <h6>Estratégicos y Operativos</h6>
+              </div>
+            </div>
+            <div class="clas-body" style="display:flex;gap:16px;flex-wrap:wrap;">
+              <div class="clas-item" style="flex:1;min-width:220px;">
+                <span class="clas-badge" style="background:rgba(201,168,76,.12);color:var(--dorado);">Estratégico</span>
+                <span>Ingreso por evento (crecimiento del negocio)</span>
+              </div>
+              <div class="clas-item" style="flex:1;min-width:220px;">
+                <span class="clas-badge" style="background:rgba(66,165,245,.12);color:#42a5f5;">Operativos</span>
+                <span>Costo por evento y satisfacción del cliente (funcionamiento diario)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
--->
 
 {% endblock %}
 
 {% block extra_js %}
 <script src="{% static 'ProEventos/js/kpis.js' %}"></script>
-
 {% endblock %}

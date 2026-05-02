@@ -1,177 +1,286 @@
 {% extends "ProEventos/base.html" %}
 {% load static %}
 
-{% block title %}Mezcla de Mercadeo{% endblock %}
+{% block title %}Mezcla de Marketing{% endblock %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'ProEventos/css/mercadeo.css' %}">
-
 {% endblock %}
 
 {% block content %}
 
-<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="container">
     <div class="tag">Planeación Estratégica</div>
-    <h1>Mezcla de <span>Mercadeo</span></h1>
-    <p>Las 4 P's del Marketing aplicadas a Proeventos S.A.S. — Medellín, Colombia</p>
+    <h1>Mezcla de <span>Marketing</span></h1>
+    <p>Estrategia de las 4P's — Proeventos S.A.S.</p>
   </div>
 </section>
 
-<div class="intro-band">
-  <div class="container">
-    <p>El marketing mix de Proeventos integra <strong style="color:var(--dorado)">Producto, Precio, Plaza y
-        Promoción</strong> en una estrategia coherente orientada al mercado de eventos sociales y corporativos premium
-      en el Área Metropolitana de Medellín.</p>
-  </div>
-</div>
-
-<!-- ══ 4P CARDS ══ -->
 <section class="mix-section">
   <div class="container">
+
+    <div class="sec-heading">Matriz <span>4P's</span> — Proeventos</div>
+    <div class="gold-line"></div>
+
     <div class="row g-4">
 
-      <!-- ━━ P1 PRODUCTO ━━ -->
-      <div class="col-lg-6 fade-in-up">
-        <div class="p-card p1">
-          <div class="p-img-zone" id="zone1">
-            <img src="TU-IMAGEN-PRODUCTO.jpg" alt="Producto">
-          </div>
-          <div class="p-body">
-            <span class="p-number">P</span>
-            <span class="p-label">1ª P</span>
-            <h3>Producto / Servicio</h3>
-            <div class="divider"></div>
-            <ul class="strategy-list">
-              <li><span class="si">01</span>Menús personalizables: Amplia variedad gastronómica adaptada a los eventos y
-                preferencias dietéticas (saludables).</li>
-              <li><span class="si">02</span>Calidad superior: Ingredientes frescos y proveedores confiables para
-                garantizar sabor y seguridad.</li>
-              <li><span class="si">03</span>Bebidas variadas: Variedad de opciones y servicio de barman.</li>
-              <li><span class="si">04</span>Equipo humano profesional: Chefs expertos, personal capacitado, protocolo y
-                atención.</li>
-              <li><span class="si">05</span>Asesoría experta: Planificación personalizada, logística y coordinación para
-                cada evento.</li>
-            </ul>
-            <div class="kpi-chips">
-              <span class="kpi-chip">Menús personalizados</span>
-              <span class="kpi-chip">Calidad superior</span>
-              <span class="kpi-chip">Barman</span>
-              <span class="kpi-chip">Chefs expertos</span>
-              <span class="kpi-chip">Asesoría</span>
+      <!-- ══ PRODUCTO ══ -->
+      <div class="col-xl-3 col-lg-6 fade-in-up">
+        <div class="p-pillar p1">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i class="bi bi-box-seam-fill"></i></div>
+            <div>
+              <span class="pillar-tag">P01</span>
+              <h4>Producto</h4>
             </div>
           </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b1">Oferta</span>
+              <p><strong>Menús personalizables</strong> — Amplia variedad gastronómica adaptada a los eventos. Preferencias dietéticas (saludables).</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b1">Calidad</span>
+              <p><strong>Calidad superior</strong> — Ingredientes frescos. Proveedores confiables, para garantizar sabor y seguridad.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b1">Servicio</span>
+              <p><strong>Bebidas variadas</strong> — Variedad de opciones y servicio de barman.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b1">Talento</span>
+              <p><strong>Equipo humano profesional</strong> — Chefs expertos, personal capacitado. Protocolo y atención.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b1">Consultoría</span>
+              <p><strong>Asesoría experta</strong> — Planificación personalizada. Logística y coordinación para cada evento.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- ━━ P2 PRECIO ━━ -->
-      <div class="col-lg-6 fade-in-up">
-        <div class="p-card p2">
-          <div class="p-img-zone" id="zone2">
-            <img src="TU-IMAGEN-PRECIO.jpg" alt="Precio">
-          </div>
-          <div class="p-body">
-            <span class="p-number">P</span>
-            <span class="p-label">2ª P</span>
-            <h3>Precio</h3>
-            <div class="divider"></div>
-            <ul class="strategy-list">
-              <li><span class="si">01</span>Paquetes flexibles: Ofertas base adaptables según número de invitados y
-                servicios adicionales.</li>
-              <li><span class="si">02</span>Tarifas por persona: Precios variables según la complejidad del menú y los
-                servicios incluidos.</li>
-              <li><span class="si">03</span>Cotizaciones transparentes: Desglose detallado de todos los costos
-                (ingredientes, transporte, personal, margen).</li>
-              <li><span class="si">04</span>Descuentos por volumen/fidelidad: Precios especiales para grandes eventos o
-                clientes recurrentes.</li>
-              <li><span class="si">05</span>Opciones de pago: Flexibilidad con anticipos, saldos y acuerdos de crédito
-                para clientes empresariales.</li>
-            </ul>
-            <div class="kpi-chips">
-              <span class="kpi-chip">Paquetes flexibles</span>
-              <span class="kpi-chip">Tarifas por persona</span>
-              <span class="kpi-chip">Cotización clara</span>
-              <span class="kpi-chip">Descuentos fidelidad</span>
+      <!-- ══ PRECIO ══ -->
+      <div class="col-xl-3 col-lg-6 fade-in-up">
+        <div class="p-pillar p2">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i class="bi bi-currency-dollar"></i></div>
+            <div>
+              <span class="pillar-tag">P02</span>
+              <h4>Precio</h4>
             </div>
           </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b2">Estrategia</span>
+              <p><strong>Paquetes flexibles</strong> — Ofertas base adaptables según número de invitados. Servicios adicionales.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b2">Tarifa</span>
+              <p><strong>Tarifas por persona</strong> — Precios variables según la complejidad del menú y los servicios incluidos.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b2">Transparencia</span>
+              <p><strong>Cotizaciones transparentes</strong> — Desglose detallado de todos los costos (ingredientes, transporte, personal, margen).</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b2">Fidelización</span>
+              <p><strong>Descuentos por volumen/fidelidad</strong> — Precios especiales para grandes eventos o clientes recurrentes.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b2">Flexibilidad</span>
+              <p><strong>Opciones de pago</strong> — Flexibilidad con anticipos, saldos y acuerdos de crédito para clientes empresariales.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- ━━ P3 PLAZA ━━ -->
-      <div class="col-lg-6 fade-in-up">
-        <div class="p-card p3">
-          <div class="p-img-zone" id="zone3">
-            <img src="TU-IMAGEN-PLAZA.jpg" alt="Plaza">
-          </div>
-          <div class="p-body">
-            <span class="p-number">P</span>
-            <span class="p-label">3ª P</span>
-            <h3>Plaza / Distribución</h3>
-            <div class="divider"></div>
-            <ul class="strategy-list">
-              <li><span class="si">01</span>Atención directa: Reuniones presenciales, telefónicas o videollamadas
-                personalizadas.</li>
-              <li><span class="si">02</span>Oficina/showroom: Espacio físico para reuniones, degustaciones y
-                demostraciones de montaje.</li>
-              <li><span class="si">03</span>Plataformas digitales: Sitio web con galerías, testimonios y contactos.
-                Presencia activa en redes sociales (Instagram, Facebook, LinkedIn).</li>
-              <li><span class="si">04</span>Alianzas estratégicas: Colaboraciones con salones de eventos, hoteles,
-                planificadores y empresas de alquiler.</li>
-              <li><span class="si">05</span>Logística propia: Vehículos adecuados para transporte refrigerado de
-                alimentos, equipos y personal.</li>
-            </ul>
-            <div class="kpi-chips">
-              <span class="kpi-chip">Atención directa</span>
-              <span class="kpi-chip">Showroom</span>
-              <span class="kpi-chip">Web + RRSS</span>
-              <span class="kpi-chip">Alianzas</span>
-              <span class="kpi-chip">Logística propia</span>
+      <!-- ══ PLAZA ══ -->
+      <div class="col-xl-3 col-lg-6 fade-in-up">
+        <div class="p-pillar p3">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <span class="pillar-tag">P03</span>
+              <h4>Plaza</h4>
             </div>
           </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b3">Canal</span>
+              <p><strong>Atención directa</strong> — Reuniones presenciales, telefónicas o videollamadas personalizadas.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b3">Espacio</span>
+              <p><strong>Oficina / Showroom</strong> — Crear espacio físico para reuniones, degustaciones y demostraciones de montaje.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b3">Digital</span>
+              <p><strong>Plataformas digitales</strong> — Sitio web con galerías, testimonios y contactos. Presencia activa en redes sociales (Instagram, Facebook, LinkedIn).</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b3">Partnerships</span>
+              <p><strong>Alianzas estratégicas</strong> — Colaboraciones con salones de eventos, hoteles, planificadores y empresas de alquiler.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b3">Logística</span>
+              <p><strong>Logística propia</strong> — Vehículos adecuados para transporte refrigerado de alimentos, equipos y personal.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- ━━ P4 PROMOCIÓN ━━ -->
-      <div class="col-lg-6 fade-in-up">
-        <div class="p-card p4">
-          <div class="p-img-zone" id="zone4">
-            <img src="TU-IMAGEN-PROMOCION.jpg" alt="Promoción">
-          </div>
-          <div class="p-body">
-            <span class="p-number">P</span>
-            <span class="p-label">4ª P</span>
-            <h3>Promoción</h3>
-            <div class="divider"></div>
-            <ul class="strategy-list">
-              <li><span class="si">01</span>Marketing digital: SEO, publicidad segmentada en redes sociales (Meta Ads),
-                Google Ads y Email marketing.</li>
-              <li><span class="si">02</span>Participación en eventos: Asistencia a ferias empresariales y gastronómicas
-                para networking y demostraciones.</li>
-              <li><span class="si">03</span>Promociones exclusivas: Eventos para clientes potenciales para experimentar
-                la calidad.</li>
-              <li><span class="si">04</span>Relaciones públicas y fidelización: Colaboraciones con medios, blogs
-                especializados y beneficios para clientes recurrentes y referidos.</li>
-              <li><span class="si">05</span>Marca sólida: Nombre, logo e identidad visual que comuniquen profesionalismo
-                y estilo.</li>
-            </ul>
-            <div class="kpi-chips">
-              <span class="kpi-chip">Meta Ads</span>
-              <span class="kpi-chip">Google Ads</span>
-              <span class="kpi-chip">Ferias</span>
-              <span class="kpi-chip">Email MKT</span>
-              <span class="kpi-chip">Marca sólida</span>
+      <!-- ══ PROMOCIÓN ══ -->
+      <div class="col-xl-3 col-lg-6 fade-in-up">
+        <div class="p-pillar p4">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i class="bi bi-megaphone-fill"></i></div>
+            <div>
+              <span class="pillar-tag">P04</span>
+              <h4>Promoción</h4>
             </div>
           </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b4">Digital</span>
+              <p><strong>Marketing digital</strong> — SEO, publicidad segmentada en redes sociales (Meta Ads), Google Ads y Email marketing.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b4">Networking</span>
+              <p><strong>Participación en eventos</strong> — Asistencia a ferias empresariales y gastronómicas para networking y demostraciones.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b4">Experiencia</span>
+              <p><strong>Promociones exclusivas</strong> — Eventos para clientes potenciales, para experimentar la calidad.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b4">Fidelización</span>
+              <p><strong>Relaciones públicas y fidelización</strong> — Colaboraciones con medios, blogs especializados. Beneficios para clientes recurrentes y por referidos.</p>
+            </div>
+          </div>
+
+          <div class="mix-item">
+            <div class="mix-content">
+              <span class="mix-badge b4">Branding</span>
+              <p><strong>Marca sólida</strong> — Nombre, logo e identidad visual que comuniquen profesionalismo y estilo.</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
+    </div><!-- /row -->
+
+    <!-- ═══ RESUMEN VISUAL ═══ -->
+    <div class="mt-5 pt-4 fade-in-up">
+      <div class="sec-heading mt-4">Visión <span>Integrada</span> de las 4P's</div>
+      <div class="gold-line"></div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6 fade-in-up">
+          <div class="summary-card sc1">
+            <div class="sc-icon"><i class="bi bi-box-seam-fill"></i></div>
+            <h6>Producto</h6>
+            <p>Oferta gastronómica de alta calidad, personalizable y ejecutada por profesionales.</p>
+            <div class="sc-items">
+              <span>Menús</span><span>Calidad</span><span>Barman</span><span>Equipo</span><span>Asesoría</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 fade-in-up">
+          <div class="summary-card sc2">
+            <div class="sc-icon"><i class="bi bi-currency-dollar"></i></div>
+            <h6>Precio</h6>
+            <p>Estructura de precios flexible, transparente y orientada a la fidelización.</p>
+            <div class="sc-items">
+              <span>Paquetes</span><span>Tarifas</span><span>Cotización</span><span>Descuentos</span><span>Pagos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 fade-in-up">
+          <div class="summary-card sc3">
+            <div class="sc-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <h6>Plaza</h6>
+            <p>Canales múltiples para llegar al cliente: presencial, digital y logístico.</p>
+            <div class="sc-items">
+              <span>Presencial</span><span>Showroom</span><span>Digital</span><span>Alianzas</span><span>Logística</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 fade-in-up">
+          <div class="summary-card sc4">
+            <div class="sc-icon"><i class="bi bi-megaphone-fill"></i></div>
+            <h6>Promoción</h6>
+            <p>Comunicación digital, experiencial y relacional para atraer y fidelizar clientes.</p>
+            <div class="sc-items">
+              <span>SEO/Ads</span><span>Ferias</span><span>Promos</span><span>RRPP</span><span>Branding</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+
   </div>
 </section>
 
 {% endblock %}
-
 
 {% block extra_js %}
 <script src="{% static 'ProEventos/js/mercadeo.js' %}"></script>

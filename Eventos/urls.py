@@ -26,5 +26,6 @@ urlpatterns = [
     path('Canvas/', include('ModeloCanvas.urls')),
     path('Kpis/', include('KPIS.urls')),
     path('Inversion/', include('Inversion.urls')),
+    path('Referencias/', include('Biografia.urls')),
     
 ]

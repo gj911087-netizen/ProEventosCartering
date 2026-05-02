@@ -3,183 +3,239 @@
 {% load static %}
 
 {% block content %}
-  <!--HERO CARRUSEL-->
-  <section id="inicio">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-inner">
+<!--HERO CARRUSEL-->
+<section id="inicio">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
 
-        <div class="carousel-item active hero-slide slide-1">
-          <div class="hero-bg"></div>
-          <div class="hero-content">
-            <div class="hero-badge">Eventos Exclusivos</div>
-            <h1 class="hero-title">Arte &amp; Sabor<br />en <span>Cada Evento</span></h1>
-            <p class="hero-sub">Transformamos tus celebraciones en experiencias gastronómicas inolvidables</p>
-            <a href="#contacto" class="btn btn-hero">Reserva Ahora</a>
-          </div>
+      <div class="carousel-item active hero-slide slide-1">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <div class="hero-badge">Eventos Exclusivos</div>
+          <h1 class="hero-title">Arte &amp; Sabor<br />en <span>Cada Evento</span></h1>
+          <p class="hero-sub">Transformamos tus celebraciones en experiencias gastronómicas inolvidables</p>
+          <a href="#contacto" class="btn btn-hero">Reserva Ahora</a>
         </div>
-
-        <div class="carousel-item hero-slide slide-2">
-          <div class="hero-bg"></div>
-          <div class="hero-content">
-            <div class="hero-badge">Catering Premium</div>
-            <h1 class="hero-title">Gastronomía<br /><span>de Élite</span></h1>
-            <p class="hero-sub">Bodas, empresas, grados y todo tipo de celebraciones con el más alto estándar</p>
-            <a href="#servicios" class="btn btn-hero">Ver Servicios</a>
-          </div>
-        </div>
-
-        <div class="carousel-item hero-slide slide-3">
-          <div class="hero-bg"></div>
-          <div class="hero-content">
-            <div class="hero-badge">Experiencia &amp; Pasión</div>
-            <h1 class="hero-title">Momentos<br /><span>Perfectos</span></h1>
-            <p class="hero-sub">Más de 3 años creando experiencias culinarias únicas y personalizadas</p>
-            <a href="#galeria" class="btn btn-hero">Ver Galería</a>
-          </div>
-        </div>
-
       </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <i class="bi bi-chevron-left" style="color:var(--dorado);font-size:1.4rem;"></i>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <i class="bi bi-chevron-right" style="color:var(--dorado);font-size:1.4rem;"></i>
-      </button>
-
-      <!-- Indicadores -->
-      <div class="carousel-indicators" style="bottom:18px;">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
-          style="width:36px;height:3px;background:var(--dorado);border:none;opacity:.5;"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
-          style="width:36px;height:3px;background:var(--dorado);border:none;opacity:.5;"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
-          style="width:36px;height:3px;background:var(--dorado);border:none;opacity:.5;"></button>
+      <div class="carousel-item hero-slide slide-2">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <div class="hero-badge">Catering Premium</div>
+          <h1 class="hero-title">Gastronomía<br /><span>de Élite</span></h1>
+          <p class="hero-sub">Bodas, empresas, grados y todo tipo de celebraciones con el más alto estándar</p>
+          <a href="#servicios" class="btn btn-hero">Ver Servicios</a>
+        </div>
       </div>
+
+      <div class="carousel-item hero-slide slide-3">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <div class="hero-badge">Experiencia &amp; Pasión</div>
+          <h1 class="hero-title">Momentos<br /><span>Perfectos</span></h1>
+          <p class="hero-sub">Más de 3 años creando experiencias culinarias únicas y personalizadas</p>
+          <a href="#galeria" class="btn btn-hero">Ver Galería</a>
+        </div>
+      </div>
+
     </div>
-  </section>
 
-  <!-- ══════════════════════════════════════
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <i class="bi bi-chevron-left" style="color:var(--dorado);font-size:1.4rem;"></i>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <i class="bi bi-chevron-right" style="color:var(--dorado);font-size:1.4rem;"></i>
+    </button>
+
+    <!-- Indicadores -->
+    
+    <div class="carousel-indicators" style="bottom: 18px;">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+        style="width:36px; height:4px; background:var(--dorado); border:none; border-radius:0; opacity:1;"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+        style="width:36px; height:4px; background:var(--dorado); border:none; border-radius:0; opacity:0.35;"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+        style="width:36px; height:4px; background:var(--dorado); border:none; border-radius:0; opacity:0.35;"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
      SERVICIOS
 ══════════════════════════════════════ -->
-  <section id="servicios">
-    <div class="container">
-      <div data-aos="fade-up">
-        <div class="gold-divider"><span></span><i class="bi bi-star-fill"></i><span></span></div>
-        <h2 class="section-title text-white">Nuestros <span style="color:var(--dorado)">Servicios</span></h2>
-        <p class="section-sub">Soluciones gastronómicas completas para cada ocasión</p>
-      </div>
+<section id="servicios">
+  <div class="container">
+    <div data-aos="fade-up">
+      <div class="gold-divider"><span></span><i class="bi bi-star-fill"></i><span></span></div>
+      <h2 class="section-title text-white">Nuestros <span style="color:var(--dorado)">Servicios</span></h2>
+      <p class="section-sub">Soluciones gastronómicas completas para cada ocasión</p>
+    </div>
 
-      <div class="row g-4">
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-          <div class="card-3d">
-            <div class="icon-wrap"><i class="bi bi-hearts"></i></div>
-            <h5>Bodas &amp; Matrimonios</h5>
-            <p>Menús personalizados, decoración de mesas y servicio impecable para el día más especial de tu vida.</p>
-          </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="card-3d">
+          <div class="icon-wrap"><i class="bi bi-hearts"></i></div>
+          <h5>Bodas &amp; Matrimonios</h5>
+          <p>Menús personalizados, decoración de mesas y servicio impecable para el día más especial de tu vida.</p>
         </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card-3d">
-            <div class="icon-wrap"><i class="bi bi-building"></i></div>
-            <h5>Eventos Corporativos</h5>
-            <p>Almuerzos ejecutivos, cócteles empresariales y coffee breaks con estándares internacionales.</p>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-3d">
+          <div class="icon-wrap"><i class="bi bi-building"></i></div>
+          <h5>Eventos Corporativos</h5>
+          <p>Almuerzos ejecutivos, cócteles empresariales y coffee breaks con estándares internacionales.</p>
         </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card-3d">
-            <div class="icon-wrap"><i class="bi bi-mortarboard-fill"></i></div>
-            <h5>Grados &amp; Celebraciones</h5>
-            <p>Buffets completos, barra de bebidas y ambientación para que tu logro brille con todo el sabor.</p>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-3d">
+          <div class="icon-wrap"><i class="bi bi-mortarboard-fill"></i></div>
+          <h5>Grados &amp; Celebraciones</h5>
+          <p>Buffets completos, barra de bebidas y ambientación para que tu logro brille con todo el sabor.</p>
         </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card-3d">
-            <div class="icon-wrap"><i class="bi bi-cake2-fill"></i></div>
-            <h5>Quinceañeras &amp; Fiestas</h5>
-            <p>Temáticas personalizadas, bocadillos creativos y presentaciones que impresionan.</p>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-3d">
+          <div class="icon-wrap"><i class="bi bi-cake2-fill"></i></div>
+          <h5>Quinceañeras &amp; Fiestas</h5>
+          <p>Temáticas personalizadas, bocadillos creativos y presentaciones que impresionan.</p>
         </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="card-3d">
-            <div class="icon-wrap"><i class="bi bi-cup-straw"></i></div>
-            <h5>Cócteles &amp; Cenas Gala</h5>
-            <p>Servicio de alta cocina, mozos uniformados y atención premium para eventos de élite.</p>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-3d">
+          <div class="icon-wrap"><i class="bi bi-cup-straw"></i></div>
+          <h5>Cócteles &amp; Cenas Gala</h5>
+          <p>Servicio de alta cocina, mozos uniformados y atención premium para eventos de élite.</p>
         </div>
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-          <div class="card-3d">
-            <div class="icon-wrap"><i class="bi bi-geo-alt-fill"></i></div>
-            <h5>Servicio a Domicilio</h5>
-            <p>Llevamos toda la experiencia gastronómica hasta el lugar que elijas en la ciudad y alrededores.</p>
-          </div>
+      </div>
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-3d">
+          <div class="icon-wrap"><i class="bi bi-geo-alt-fill"></i></div>
+          <h5>Servicio a Domicilio</h5>
+          <p>Llevamos toda la experiencia gastronómica hasta el lugar que elijas en la ciudad y alrededores.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ══════════════════════════════════════
+<!-- ══════════════════════════════════════
      GALERÍA
 ══════════════════════════════════════ -->
-  <section id="galeria">
-    <div class="container">
-      <div data-aos="fade-up">
-        <div class="gold-divider"><span></span><i class="bi bi-camera-fill"></i><span></span></div>
-        <h2 class="section-title text-white">Nuestra <span style="color:var(--dorado)">Galería</span></h2>
-        <p class="section-sub">Cada imagen cuenta una historia de sabor y elegancia</p>
+<section id="galeria">
+  <div class="container">
+    <div data-aos="fade-up">
+      <div class="gold-divider"><span></span><i class="bi bi-camera-fill"></i><span></span></div>
+      <h2 class="section-title text-white">Nuestra <span style="color:var(--dorado)">Galería</span></h2>
+      <p class="section-sub">Cada imagen cuenta una historia de sabor y elegancia</p>
+    </div>
+
+
+    <div class="row g-3" id="galeriaGrid">
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+        <div class="gallery-item">
+          <img src="{% static 'ProEventos/img/imagen1.jpeg' %}" alt=""
+            onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
+          <div class="gallery-overlay"><span></span></div>
+        </div>
       </div>
-
-
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="80">
+        <div class="gallery-item">
+          <img src="{% static 'ProEventos/img/imagen2.jpeg' %}" alt=""
+            onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
+          <div class="gallery-overlay"><span></span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="160">
+        <div class="gallery-item">
+          <img src="{% static 'ProEventos/img/imagen3.jpeg' %}" alt=""
+            onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
+          <div class="gallery-overlay"><span></span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="240">
+        <div class="gallery-item">
+          <img src="{% static 'ProEventos/img/imagen4.jpeg' %}" alt=""
+            onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
+          <div class="gallery-overlay"><span></span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="320">
+        <div class="gallery-item">
+          <img src="{% static 'ProEventos/img/imagen5.jpeg' %}" alt=""
+            onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
+          <div class="gallery-overlay"><span></span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+        <div class="gallery-item">
+          <img src="{% static 'ProEventos/img/imagen6.jpeg' %}" alt=""
+            onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
+          <div class="gallery-overlay"><span></span></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="480">
+        <div class="gallery-item">
+          <img src="{% static 'ProEventos/img/imagen7.jpeg' %}" alt="Menú Especial">
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="560">
+        <div class="gallery-item">
+          <img src="{% static 'ProEventos/img/imagen8.jpeg' %}" alt=""
+            onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
+          <div class="gallery-overlay"><span></span></div>
+        </div>
+      </div>
       <div class="row g-3" id="galeriaGrid">
         <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
           <div class="gallery-item">
-            <img src="{% static 'ProEventos/img/imagen1.jpeg' %}" alt=""
+            <img src="{% static 'ProEventos/img/imagen9.jpeg' %}" alt=""
               onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
             <div class="gallery-overlay"><span></span></div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="80">
           <div class="gallery-item">
-            <img src="{% static 'ProEventos/img/imagen2.jpeg' %}" alt=""
+            <img src="{% static 'ProEventos/img/imagen10.jpeg' %}" alt=""
               onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
             <div class="gallery-overlay"><span></span></div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="160">
           <div class="gallery-item">
-            <img src="{% static 'ProEventos/img/imagen3.jpeg' %}" alt=""
+            <img src="{% static 'ProEventos/img/imagen11.jpeg' %}" alt=""
               onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
             <div class="gallery-overlay"><span></span></div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="240">
           <div class="gallery-item">
-            <img src="{% static 'ProEventos/img/imagen4.jpeg' %}" alt=""
+            <img src="{% static 'ProEventos/img/imagen12.jpeg' %}" alt=""
               onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
             <div class="gallery-overlay"><span></span></div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="320">
           <div class="gallery-item">
-            <img src="{% static 'ProEventos/img/imagen5.jpeg' %}" alt=""
+            <img src="{% static 'ProEventos/img/imagen13.jpeg' %}" alt=""
               onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
             <div class="gallery-overlay"><span></span></div>
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
           <div class="gallery-item">
-            <img src="{% static 'ProEventos/img/imagen6.jpeg' %}" alt=""
+            <img src="{% static 'ProEventos/img/imagen14.jpeg' %}" alt=""
               onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
             <div class="gallery-overlay"><span></span></div>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="480">
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
           <div class="gallery-item">
-            <img src="{% static 'ProEventos/img/imagen7.jpeg' %}" alt="Menú Especial">
+            <img src="{% static 'ProEventos/img/imagen15.jpeg' %}" alt="Menú Especial">
           </div>
         </div>
         <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="560">
           <div class="gallery-item">
-            <img src="{% static 'ProEventos/img/imagen8.jpeg' %}" alt=""
+            <img src="{% static 'ProEventos/img/imagen16.jpeg' %}" alt=""
               onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
             <div class="gallery-overlay"><span></span></div>
           </div>
@@ -187,228 +243,172 @@
         <div class="row g-3" id="galeriaGrid">
           <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
             <div class="gallery-item">
-              <img src="{% static 'ProEventos/img/imagen9.jpeg' %}" alt=""
+              <img src="{% static 'ProEventos/img/imagen17.jpeg' %}" alt=""
                 onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
               <div class="gallery-overlay"><span></span></div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="80">
             <div class="gallery-item">
-              <img src="{% static 'ProEventos/img/imagen10.jpeg' %}" alt=""
+              <img src="{% static 'ProEventos/img/imagen23.jpeg' %}" alt=""
                 onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
               <div class="gallery-overlay"><span></span></div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="160">
             <div class="gallery-item">
-              <img src="{% static 'ProEventos/img/imagen11.jpeg' %}" alt=""
+              <img src="{% static 'ProEventos/img/imagen19.jpeg' %}" alt=""
                 onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
               <div class="gallery-overlay"><span></span></div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="240">
             <div class="gallery-item">
-              <img src="{% static 'ProEventos/img/imagen12.jpeg' %}" alt=""
+              <img src="{% static 'ProEventos/img/imagen20.jpeg' %}" alt=""
                 onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
               <div class="gallery-overlay"><span></span></div>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="320">
             <div class="gallery-item">
-              <img src="{% static 'ProEventos/img/imagen13.jpeg' %}" alt=""
+              <img src="{% static 'ProEventos/img/imagen21.jpeg' %}" alt=""
                 onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
               <div class="gallery-overlay"><span></span></div>
             </div>
           </div>
-          <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
-            <div class="gallery-item">
-              <img src="{% static 'ProEventos/img/imagen14.jpeg' %}" alt=""
-                onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
-              <div class="gallery-overlay"><span></span></div>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
-            <div class="gallery-item">
-              <img src="{% static 'ProEventos/img/imagen15.jpeg' %}" alt="Menú Especial">
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="560">
-            <div class="gallery-item">
-              <img src="{% static 'ProEventos/img/imagen16.jpeg' %}" alt=""
-                onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
-              <div class="gallery-overlay"><span></span></div>
-            </div>
-          </div>
-          <div class="row g-3" id="galeriaGrid">
-            <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
-              <div class="gallery-item">
-                <img src="{% static 'ProEventos/img/imagen17.jpeg' %}" alt=""
-                  onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
-                <div class="gallery-overlay"><span></span></div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="80">
-              <div class="gallery-item">
-                <img src="{% static 'ProEventos/img/imagen23.jpeg' %}" alt=""
-                  onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
-                <div class="gallery-overlay"><span></span></div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="160">
-              <div class="gallery-item">
-                <img src="{% static 'ProEventos/img/imagen19.jpeg' %}" alt=""
-                  onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
-                <div class="gallery-overlay"><span></span></div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="240">
-              <div class="gallery-item">
-                <img src="{% static 'ProEventos/img/imagen20.jpeg' %}" alt=""
-                  onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
-                <div class="gallery-overlay"><span></span></div>
-              </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="320">
-              <div class="gallery-item">
-                <img src="{% static 'ProEventos/img/imagen21.jpeg' %}" alt=""
-                  onerror="this.closest('[class*=col]').classList.add('col-img-hide')" />
-                <div class="gallery-overlay"><span></span></div>
-              </div>
-            </div>
 
 
 
 
 
 
-          </div>
-  </section>
+        </div>
+</section>
 
-  <!-- ══════════════════════════════════════
+<!-- ══════════════════════════════════════
      SOBRE NOSOTROS
 ══════════════════════════════════════ -->
-  <section id="nosotros">
-    <div class="container">
-      <div data-aos="fade-up">
-        <div class="gold-divider"><span></span><i class="bi bi-award-fill"></i><span></span></div>
-        <h2 class="section-title text-white">Sobre <span style="color:var(--dorado)">Nosotros</span></h2>
-        <p class="section-sub">Conoce quiénes somos y qué nos mueve cada día</p>
-      </div>
+<section id="nosotros">
+  <div class="container">
+    <div data-aos="fade-up">
+      <div class="gold-divider"><span></span><i class="bi bi-award-fill"></i><span></span></div>
+      <h2 class="section-title text-white">Sobre <span style="color:var(--dorado)">Nosotros</span></h2>
+      <p class="section-sub">Conoce quiénes somos y qué nos mueve cada día</p>
+    </div>
 
-      <!-- Estadísticas -->
-      <div class="row g-3 mb-5">
-        <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="0">
-          <div class="about-stat">
-            <span class="num">3</span>
-            <span class="lbl">Años de experiencia</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="100">
-          <div class="about-stat">
-            <span class="num">35</span>
-            <span class="lbl">Eventos realizados</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="200">
-          <div class="about-stat">
-            <span class="num">98%</span>
-            <span class="lbl">Clientes satisfechos</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="300">
-          <div class="about-stat">
-            <span class="num">16</span>
-            <span class="lbl">Chefs &amp; personal</span>
-          </div>
+    <!-- Estadísticas -->
+    <div class="row g-3 mb-5">
+      <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="0">
+        <div class="about-stat">
+          <span class="num">3</span>
+          <span class="lbl">Años de experiencia</span>
         </div>
       </div>
+      <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="100">
+        <div class="about-stat">
+          <span class="num">35</span>
+          <span class="lbl">Eventos realizados</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="200">
+        <div class="about-stat">
+          <span class="num">98%</span>
+          <span class="lbl">Clientes satisfechos</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="300">
+        <div class="about-stat">
+          <span class="num">16</span>
+          <span class="lbl">Chefs &amp; personal</span>
+        </div>
+      </div>
+    </div>
 
-      <!-- Misión y Visión -->
-      <div class="row g-4">
-        <div class="col-md-6" data-aos="fade-right">
-          <div class="mv-card">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div
-                style="width:46px;height:46px;border:2px solid var(--dorado);display:flex;align-items:center;justify-content:center;">
-                <i class="bi bi-bullseye" style="color:var(--dorado);font-size:1.3rem;"></i>
-              </div>
-              <h4 class="mb-0">Nuestra Misión</h4>
+    <!-- Misión y Visión -->
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="mv-card">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div
+              style="width:46px;height:46px;border:2px solid var(--dorado);display:flex;align-items:center;justify-content:center;">
+              <i class="bi bi-bullseye" style="color:var(--dorado);font-size:1.3rem;"></i>
             </div>
-            <p>Ofrecer experiencias gastronómicas
-              memorables en bodas, fiestas y todo tipo de
-              celebraciones, a través de un servicio
-              innovador, personalizado y de excelente
-              calidad. Nos comprometemos a integrar
-              creatividad, sabor y presentación en cada
-              evento, cuidando cada detalle para superar
-              las expectativas de nuestros clientes y
-              crear momentos que se conviertan en
-              recuerdos duraderos.
-            </p>
+            <h4 class="mb-0">Nuestra Misión</h4>
           </div>
+          <p>Ofrecer experiencias gastronómicas
+            memorables en bodas, fiestas y todo tipo de
+            celebraciones, a través de un servicio
+            innovador, personalizado y de excelente
+            calidad. Nos comprometemos a integrar
+            creatividad, sabor y presentación en cada
+            evento, cuidando cada detalle para superar
+            las expectativas de nuestros clientes y
+            crear momentos que se conviertan en
+            recuerdos duraderos.
+          </p>
         </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <div class="mv-card">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div
-                style="width:46px;height:46px;border:2px solid var(--dorado);display:flex;align-items:center;justify-content:center;">
-                <i class="bi bi-eye-fill" style="color:var(--dorado);font-size:1.3rem;"></i>
-              </div>
-              <h4 class="mb-0">Nuestra Visión</h4>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="mv-card">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div
+              style="width:46px;height:46px;border:2px solid var(--dorado);display:flex;align-items:center;justify-content:center;">
+              <i class="bi bi-eye-fill" style="color:var(--dorado);font-size:1.3rem;"></i>
             </div>
-            <p>Consolidarnos como una empresa referente en la
-              organización de eventos gastronómicos, reconocida por
-              ofrecer propuestas originales y de alta calidad, siendo la
-              elección preferida en bodas, fiestas y todo tipo de
-              celebraciones, gracias a nuestro compromiso con la
-              excelencia y la innovación.
-            </p>
+            <h4 class="mb-0">Nuestra Visión</h4>
           </div>
+          <p>Consolidarnos como una empresa referente en la
+            organización de eventos gastronómicos, reconocida por
+            ofrecer propuestas originales y de alta calidad, siendo la
+            elección preferida en bodas, fiestas y todo tipo de
+            celebraciones, gracias a nuestro compromiso con la
+            excelencia y la innovación.
+          </p>
         </div>
-        <div class="col-12" data-aos="fade-up">
-          <div class="mv-card">
-            <div class="d-flex align-items-center gap-3 mb-3">
-              <div
-                style="width:46px;height:46px;border:2px solid var(--dorado);display:flex;align-items:center;justify-content:center;">
-                <i class="bi bi-gem" style="color:var(--dorado);font-size:1.3rem;"></i>
-              </div>
-              <h4 class="mb-0">Nuestros Valores</h4>
+      </div>
+      <div class="col-12" data-aos="fade-up">
+        <div class="mv-card">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div
+              style="width:46px;height:46px;border:2px solid var(--dorado);display:flex;align-items:center;justify-content:center;">
+              <i class="bi bi-gem" style="color:var(--dorado);font-size:1.3rem;"></i>
             </div>
-            <div class="row g-3 mt-1">
-              <div class="col-6 col-md-3">
-                <div class="d-flex gap-2 align-items-start">
-                  <i class="bi bi-check2-circle text-warning mt-1"></i>
-                  <div>
-                    <strong style="color:var(--dorado);font-size:.88rem;">Excelencia</strong>
-                    <p style="color:rgba(255,255,255,.6);font-size:.82rem;margin:0;">Calidad en cada detalle</p>
-                  </div>
+            <h4 class="mb-0">Nuestros Valores</h4>
+          </div>
+          <div class="row g-3 mt-1">
+            <div class="col-6 col-md-3">
+              <div class="d-flex gap-2 align-items-start">
+                <i class="bi bi-check2-circle text-warning mt-1"></i>
+                <div>
+                  <strong style="color:var(--dorado);font-size:.88rem;">Excelencia</strong>
+                  <p style="color:rgba(255,255,255,.6);font-size:.82rem;margin:0;">Calidad en cada detalle</p>
                 </div>
               </div>
-              <div class="col-6 col-md-3">
-                <div class="d-flex gap-2 align-items-start">
-                  <i class="bi bi-check2-circle text-warning mt-1"></i>
-                  <div>
-                    <strong style="color:var(--dorado);font-size:.88rem;">Pasión</strong>
-                    <p style="color:rgba(255,255,255,.6);font-size:.82rem;margin:0;">Amor por la gastronomía</p>
-                  </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="d-flex gap-2 align-items-start">
+                <i class="bi bi-check2-circle text-warning mt-1"></i>
+                <div>
+                  <strong style="color:var(--dorado);font-size:.88rem;">Pasión</strong>
+                  <p style="color:rgba(255,255,255,.6);font-size:.82rem;margin:0;">Amor por la gastronomía</p>
                 </div>
               </div>
-              <div class="col-6 col-md-3">
-                <div class="d-flex gap-2 align-items-start">
-                  <i class="bi bi-check2-circle text-warning mt-1"></i>
-                  <div>
-                    <strong style="color:var(--dorado);font-size:.88rem;">Puntualidad</strong>
-                    <p style="color:rgba(255,255,255,.6);font-size:.82rem;margin:0;">Compromiso con el tiempo</p>
-                  </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="d-flex gap-2 align-items-start">
+                <i class="bi bi-check2-circle text-warning mt-1"></i>
+                <div>
+                  <strong style="color:var(--dorado);font-size:.88rem;">Puntualidad</strong>
+                  <p style="color:rgba(255,255,255,.6);font-size:.82rem;margin:0;">Compromiso con el tiempo</p>
                 </div>
               </div>
-              <div class="col-6 col-md-3">
-                <div class="d-flex gap-2 align-items-start">
-                  <i class="bi bi-check2-circle text-warning mt-1"></i>
-                  <div>
-                    <strong style="color:var(--dorado);font-size:.88rem;">Creatividad</strong>
-                    <p style="color:rgba(255,255,255,.6);font-size:.82rem;margin:0;">Innovación constante</p>
-                  </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="d-flex gap-2 align-items-start">
+                <i class="bi bi-check2-circle text-warning mt-1"></i>
+                <div>
+                  <strong style="color:var(--dorado);font-size:.88rem;">Creatividad</strong>
+                  <p style="color:rgba(255,255,255,.6);font-size:.82rem;margin:0;">Innovación constante</p>
                 </div>
               </div>
             </div>
@@ -416,259 +416,262 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ══════════════════════════════════════
+<!-- ══════════════════════════════════════
      HISTORIA
 ══════════════════════════════════════ -->
-  <section id="historia">
-    <div class="container">
-      <div data-aos="fade-up">
-        <div class="gold-divider"><span></span><i class="bi bi-book-fill"></i><span></span></div>
-        <h2 class="section-title text-white">Nuestra <span style="color:var(--dorado)">Historia</span></h2>
-        <p class="section-sub">Un camino de pasión, sabor y momentos inolvidables</p>
-      </div>
+<section id="historia">
+  <div class="container">
+    <div data-aos="fade-up">
+      <div class="gold-divider"><span></span><i class="bi bi-book-fill"></i><span></span></div>
+      <h2 class="section-title text-white">Nuestra <span style="color:var(--dorado)">Historia</span></h2>
+      <p class="section-sub">Un camino de pasión, sabor y momentos inolvidables</p>
+    </div>
 
-      <!-- HISTORIA PRINCIPAL -->
-      <div class="row align-items-center g-5 mb-5">
-        <div class="col-lg-5" data-aos="fade-right">
-          <div class="historia-img-wrap">
-            <div class="historia-img-main" style="
+    <!-- HISTORIA PRINCIPAL -->
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="historia-img-wrap">
+          <div class="historia-img-main" style="
             background: linear-gradient(135deg,#1a237e,#283593);
             border:1px solid rgba(201,168,76,.3);
             padding:40px 36px;
             position:relative;
             overflow:hidden;">
-              <div
-                style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;border:1px solid rgba(201,168,76,.15);border-radius:50%;">
-              </div>
-              <div
-                style="position:absolute;bottom:-40px;left:-40px;width:160px;height:160px;border:1px solid rgba(201,168,76,.1);border-radius:50%;">
-              </div>
-              <i class="bi bi-quote"
-                style="font-size:3.5rem;color:rgba(201,168,76,.25);display:block;margin-bottom:12px;"></i>
-              <p
-                style="font-family:'Playfair Display',serif;font-size:1.25rem;line-height:1.7;color:rgba(255,255,255,.9);font-style:italic;">
-                "Cada evento que organizamos lleva el corazón de quienes lo sueñan y las manos de quienes lo hacen
-                realidad."
-              </p>
-              <div style="margin-top:24px;display:flex;align-items:center;gap:14px;">
+            <div
+              style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;border:1px solid rgba(201,168,76,.15);border-radius:50%;">
+            </div>
+            <div
+              style="position:absolute;bottom:-40px;left:-40px;width:160px;height:160px;border:1px solid rgba(201,168,76,.1);border-radius:50%;">
+            </div>
+            <i class="bi bi-quote"
+              style="font-size:3.5rem;color:rgba(201,168,76,.25);display:block;margin-bottom:12px;"></i>
+            <p
+              style="font-family:'Playfair Display',serif;font-size:1.25rem;line-height:1.7;color:rgba(255,255,255,.9);font-style:italic;">
+              "Cada evento que organizamos lleva el corazón de quienes lo sueñan y las manos de quienes lo hacen
+              realidad."
+            </p>
+            <div style="margin-top:24px;display:flex;align-items:center;gap:14px;">
 
 
-              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-7" data-aos="fade-left">
-          <div style="border-left:3px solid var(--dorado);padding-left:28px;">
-            <span
-              style="color:var(--dorado);font-size:.78rem;letter-spacing:3px;text-transform:uppercase;display:block;margin-bottom:10px;">Nuestra
-              Trayectoria</span>
-            <h3
-              style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;margin-bottom:20px;">
-              De un sueño familiar a<br /><span style="color:var(--dorado)">una empresa de referencia</span>
-            </h3>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div style="border-left:3px solid var(--dorado);padding-left:28px;">
+          <span
+            style="color:var(--dorado);font-size:.78rem;letter-spacing:3px;text-transform:uppercase;display:block;margin-bottom:10px;">Nuestra
+            Trayectoria</span>
+          <h3
+            style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;margin-bottom:20px;">
+            De un sueño familiar a<br /><span style="color:var(--dorado)">una empresa de referencia</span>
+          </h3>
 
-            <p style="color:rgba(255,255,255,.75);line-height:1.9;font-size:1rem;margin-bottom:16px;">
-              En un entorno donde muchas celebraciones se han vuelto monótonas y poco recordadas, nace nuestra empresa
-              con el propósito de ofrecer una forma distinta de vivir los eventos: a través de experiencias
-              gastronómicas memorables.
-            </p>
-            <p style="color:rgba(255,255,255,.75);line-height:1.9;font-size:1rem;margin-bottom:16px;">
-              Todo inició cuando, como muchas personas, nos dimos cuenta de que en bodas y fiestas la comida solía ser
-              tradicional y poco innovadora, sin generar una verdadera conexión con los invitados. Esto hacía que los
-              eventos perdieran parte de su esencia y originalidad.
-            </p>
-            <p style="color:rgba(255,255,255,.75);line-height:1.9;font-size:1rem;">
-              partir de esto, decidimos investigar y explorar nuevas alternativas, entendiendo que la gastronomía podía
-              ir más allá de simplemente servir alimentos, convirtiéndose en un elemento central de la experiencia.
-              Inspirados en la creatividad culinaria y en las nuevas tendencias, comenzamos un proceso de diseño y
-              prueba de ideas, buscando ofrecer propuestas dinámicas, atractivas y diferentes.
+          <p style="color:rgba(255,255,255,.75);line-height:1.9;font-size:1rem;margin-bottom:16px;">
+            En un entorno donde muchas celebraciones se han vuelto monótonas y poco recordadas, nace nuestra empresa
+            con el propósito de ofrecer una forma distinta de vivir los eventos: a través de experiencias
+            gastronómicas memorables.
+          </p>
+          <p style="color:rgba(255,255,255,.75);line-height:1.9;font-size:1rem;margin-bottom:16px;">
+            Todo inició cuando, como muchas personas, nos dimos cuenta de que en bodas y fiestas la comida solía ser
+            tradicional y poco innovadora, sin generar una verdadera conexión con los invitados. Esto hacía que los
+            eventos perdieran parte de su esencia y originalidad.
+          </p>
+          <p style="color:rgba(255,255,255,.75);line-height:1.9;font-size:1rem;">
+            partir de esto, decidimos investigar y explorar nuevas alternativas, entendiendo que la gastronomía podía
+            ir más allá de simplemente servir alimentos, convirtiéndose en un elemento central de la experiencia.
+            Inspirados en la creatividad culinaria y en las nuevas tendencias, comenzamos un proceso de diseño y
+            prueba de ideas, buscando ofrecer propuestas dinámicas, atractivas y diferentes.
 
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- LÍNEA DE TIEMPO -->
-    <div data-aos="fade-up" style="margin-top:70px;">
-      <div class="gold-divider" style="margin-bottom:50px;"><span></span><i
-          class="bi bi-clock-history"></i><span></span></div>
-      <h4 style="font-family:'Playfair Display',serif;text-align:center;font-size:1.6rem;margin-bottom:50px;">Línea del
-        <span style="color:var(--dorado)">Tiempo</span></h4>
+  <!-- LÍNEA DE TIEMPO -->
+  <div data-aos="fade-up" style="margin-top:70px;">
+    <div class="gold-divider" style="margin-bottom:50px;"><span></span><i class="bi bi-clock-history"></i><span></span>
+    </div>
+    <h4 style="font-family:'Playfair Display',serif;text-align:center;font-size:1.6rem;margin-bottom:50px;">Línea del
+      <span style="color:var(--dorado)">Tiempo</span>
+    </h4>
+  </div>
+
+  <div class="timeline-wrap">
+    <!-- Item 1 -->
+    <div class="tl-item" data-aos="fade-right" data-aos-delay="0">
+      <div class="tl-dot"><i class="bi bi-stars"></i></div>
+      <div class="tl-content">
+        <span class="tl-year">2024</span>
+        <h5>Los inicios</h5>
+        <p>Todo comenzó con una mujer apasionada por la cocina, que encontraba en cada receta una forma de expresar
+          amor y dedicación.
+          Lo que inició como pequeños eventos familiares, bautizos y reuniones íntimas pronto se convirtió en algo más
+          grande: el deseo de crear experiencias que unieran a las personas alrededor de la mesa.
+
+          Así nace Proeventos Catering, con la convicción de que cada celebración merece ser única y especial.
+        </p>
+      </div>
+    </div>
+    <!-- Item 2 -->
+    <div class="tl-item tl-right" data-aos="fade-left" data-aos-delay="100">
+      <div class="tl-dot"><i class="bi bi-trophy-fill"></i></div>
+      <div class="tl-content">
+        <span class="tl-year">2025</span>
+        <h5>Crecimiento </h5>
+        <p>
+          Con esfuerzo, constancia y muchas horas de trabajo, el proyecto comenzó a crecer. La demanda aumentó y fue
+          necesario formar un equipo profesional con meseros capacitados, chefs certificados, personal de decoración y
+          equipo logístico para eventos. Gracias a este crecimiento, hoy atendemos primeras comuniones, matrimonios y
+          celebraciones completas, manteniendo siempre nuestra esencia: dedicación y amor por cada detalle.
+        </p>
+      </div>
+    </div>
+    <!-- Item 3 -->
+    <div class="tl-item" data-aos="fade-right" data-aos-delay="200">
+      <div class="tl-dot"><i class="bi bi-people-fill"></i></div>
+      <div class="tl-content">
+        <span class="tl-year">2026</span>
+        <h5>Hoy una historia que continúa</h5>
+        <p> Proeventos Catering es más que un servicio: es el resultado de un sueño construido con esfuerzo y pasión.
+          Actualmente contamos con:
+          Eventos temáticos personalizados, diseñados según el gusto de cada cliente
+          Propuestas gastronómicas adaptadas a cada ocasión
+          Un equipo comprometido que cuida cada detalle
+          Seguimos creciendo, creando experiencias únicas y siendo parte de los momentos más importantes de cada
+          familia.
+        </p>
+      </div>
     </div>
 
-    <div class="timeline-wrap">
-      <!-- Item 1 -->
-      <div class="tl-item" data-aos="fade-right" data-aos-delay="0">
-        <div class="tl-dot"><i class="bi bi-stars"></i></div>
-        <div class="tl-content">
-          <span class="tl-year">2024</span>
-          <h5>Los inicios</h5>
-          <p>Todo comenzó con una mujer apasionada por la cocina, que encontraba en cada receta una forma de expresar
-            amor y dedicación.
-            Lo que inició como pequeños eventos familiares, bautizos y reuniones íntimas pronto se convirtió en algo más
-            grande: el deseo de crear experiencias que unieran a las personas alrededor de la mesa.
+</section>
 
-            Así nace Proeventos Catering, con la convicción de que cada celebración merece ser única y especial.
-          </p>
-        </div>
-      </div>
-      <!-- Item 2 -->
-      <div class="tl-item tl-right" data-aos="fade-left" data-aos-delay="100">
-        <div class="tl-dot"><i class="bi bi-trophy-fill"></i></div>
-        <div class="tl-content">
-          <span class="tl-year">2025</span>
-          <h5>Crecimiento  </h5>
-          <p>
-            Con esfuerzo, constancia y muchas horas de trabajo, el proyecto comenzó a crecer. La demanda aumentó y fue necesario formar un equipo profesional con meseros capacitados, chefs certificados, personal de decoración y equipo logístico para eventos. Gracias a este crecimiento, hoy atendemos primeras comuniones, matrimonios y celebraciones completas, manteniendo siempre nuestra esencia: dedicación y amor por cada detalle.
-          </p>
-        </div>
-      </div>
-      <!-- Item 3 -->
-      <div class="tl-item" data-aos="fade-right" data-aos-delay="200">
-        <div class="tl-dot"><i class="bi bi-people-fill"></i></div>
-        <div class="tl-content">
-          <span class="tl-year">2026</span>
-          <h5>Hoy una historia que continúa</h5>
-          <p> Proeventos Catering es más que un servicio: es el resultado de un sueño construido con esfuerzo y pasión.
-            Actualmente contamos con:
-            Eventos temáticos personalizados, diseñados según el gusto de cada cliente
-            Propuestas gastronómicas adaptadas a cada ocasión
-            Un equipo comprometido que cuida cada detalle
-            Seguimos creciendo, creando experiencias únicas y siendo parte de los momentos más importantes de cada
-            familia.
-          </p>
-        </div>
-      </div>
-
-  </section>
-
-  <!-- ══════════════════════════════════════
+<!-- ══════════════════════════════════════
      CONTACTO
 ══════════════════════════════════════ -->
-  <section id="contacto">
-    <div class="container">
-      <div data-aos="fade-up">
-        <div class="gold-divider"><span></span><i class="bi bi-envelope-fill"></i><span></span></div>
-        <h2 class="section-title text-white">Contáctanos</h2>
-        <p class="section-sub">Cuéntanos sobre tu evento y te haremos una propuesta personalizada</p>
-      </div>
+<section id="contacto">
+  <div class="container">
+    <div data-aos="fade-up">
+      <div class="gold-divider"><span></span><i class="bi bi-envelope-fill"></i><span></span></div>
+      <h2 class="section-title text-white">Contáctanos</h2>
+      <p class="section-sub">Cuéntanos sobre tu evento y te haremos una propuesta personalizada</p>
+    </div>
 
-      <div class="row g-5 align-items-start">
-        <!-- Info -->
-        <div class="col-lg-4" data-aos="fade-right">
-          <div class="contact-info-item">
-            <div class="ci-icon"><i class="bi bi-telephone-fill"></i></div>
-            <div>
-              <h6>Teléfono</h6>
-              <p>57 304 3170877</p>
-            </div>
+    <div class="row g-5 align-items-start">
+      <!-- Info -->
+      <div class="col-lg-4" data-aos="fade-right">
+        <div class="contact-info-item">
+          <div class="ci-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div>
+            <h6>Teléfono</h6>
+            <p>57 304 3170877</p>
           </div>
-          <div class="contact-info-item">
-            <div class="ci-icon"><i class="bi bi-whatsapp"></i></div>
-            <div>
-              <h6>WhatsApp</h6>
-              <p>57 304 3170877</p>
-            </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-icon"><i class="bi bi-whatsapp"></i></div>
+          <div>
+            <h6>WhatsApp</h6>
+            <p>57 304 3170877</p>
           </div>
-          <div class="contact-info-item">
-            <div class="ci-icon"><i class="bi bi-envelope-fill"></i></div>
-            <div>
-              <h6>Correo</h6>
-              <p>infoproeventoscatering@gmail.com</p>
-            </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-icon"><i class="bi bi-envelope-fill"></i></div>
+          <div>
+            <h6>Correo</h6>
+            <p>infoproeventoscatering@gmail.com</p>
           </div>
-          <div class="contact-info-item">
-            <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
-            <div>
-              <h6>Ciudad</h6>
-              <p>Colombia — Medellín</p>
-            </div>
-          </div>
-
-          <!-- Redes -->
-          <div class="mt-4">
-            <p
-              style="color:var(--dorado);font-size:.78rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;">
-              Síguenos</p>
-            <div class="social-links">
-              <a href="https://www.instagram.com/proevent_cartering?igsh=MWN2Mng5ams1cDJtOA%3D%3D&utm_source=qr"
-                target="_blank" title="Instagram">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a href="https://wa.me/573043170877" target="_blank" title="WhatsApp">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-              <a href="https://www.facebook.com/share/17SphfY2cC/?mibextid=wwXIfr" target="_blank" title="Facebook">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a href="https://www.tiktok.com/@proevent_carterin" target="_blank" title="TikTok">
-                <i class="bi bi-tiktok"></i>
-              </a>
-            </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div>
+            <h6>Ciudad</h6>
+            <p>Colombia — Medellín</p>
           </div>
         </div>
 
-        <!-- Formulario -->
-        <div class="col-lg-8" data-aos="fade-left">
-          <div class="contact-form-wrap">
-
-            <form id="contactForm" method="POST">
-              {% csrf_token %}
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label>Nombre completo</label>
-                  <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Tu nombre" required />
-                </div>
-                <div class="col-md-6">
-                  <label>Teléfono / WhatsApp</label>
-                  <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="+57 300 000 0000" />
-                </div>
-                <div class="col-md-6">
-                  <label>Correo electrónico</label>
-                  <input type="email" class="form-control" name="correo" id="correo" placeholder="tucorreo@email.com"
-                    required />
-                </div>
-                <div class="col-md-6">
-                  <label>Tipo de evento</label>
-                  <select class="form-control" name="opcion">
-                    <option value="">Selecciona...</option>
-                    <option>Boda / Matrimonio</option>
-                    <option>Evento Corporativo</option>
-                    <option>Quinceañera</option>
-                    <option>Grado / Celebración</option>
-                    <option>Cóctel / Gala</option>
-                    <option>Otro</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <label>Fecha del evento</label>
-                  <input type="date" name="fechaEvento" id="fechaEvento" class="form-control" />
-                </div>
-                <div class="col-md-6">
-                  <label>Número de personas</label>
-                  <input type="number" id="NumPersonas" name="NumPersonas" class="form-control" placeholder="Ej: 100" />
-                </div>
-                <div class="col-12">
-                  <label>Cuéntanos sobre tu evento</label>
-                  <textarea class="form-control" name="descripcion" id="descripcion" rows="4"
-                    placeholder="Describe el evento que tienes en mente, el lugar, detalles especiales..."></textarea>
-                </div>
-                <div class="col-12 mt-2">
-                  <button type="submit" class="btn btn-send">
-                    <i class="bi bi-send-fill me-2"></i>Enviar Solicitud
-                  </button>
-
-                </div>
-              </div>
-            </form>
+        <!-- Redes -->
+        <div class="mt-4">
+          <p
+            style="color:var(--dorado);font-size:.78rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;">
+            Síguenos</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/proevent_cartering?igsh=MWN2Mng5ams1cDJtOA%3D%3D&utm_source=qr"
+              target="_blank" title="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/573043170877" target="_blank" title="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/share/17SphfY2cC/?mibextid=wwXIfr" target="_blank" title="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/@proevent_carterin" target="_blank" title="TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
           </div>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-lg-8" data-aos="fade-left">
+        <div class="contact-form-wrap">
+
+          <form id="contactForm" method="POST">
+            {% csrf_token %}
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label>Nombre completo</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="col-md-6">
+                <label>Teléfono / WhatsApp</label>
+                <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="+57 300 000 0000" />
+              </div>
+              <div class="col-md-6">
+                <label>Correo electrónico</label>
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="tucorreo@email.com"
+                  required />
+              </div>
+              <div class="col-md-6">
+                <label>Tipo de evento</label>
+                <select class="form-control" name="opcion">
+                  <option value="">Selecciona...</option>
+                  <option>Boda / Matrimonio</option>
+                  <option>Evento Corporativo</option>
+                  <option>Quinceañera</option>
+                  <option>Grado / Celebración</option>
+                  <option>Cóctel / Gala</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label>Fecha del evento</label>
+                <input type="date" name="fechaEvento" id="fechaEvento" class="form-control" />
+              </div>
+              <div class="col-md-6">
+                <label>Número de personas</label>
+                <input type="number" id="NumPersonas" name="NumPersonas" class="form-control" placeholder="Ej: 100" />
+              </div>
+              <div class="col-12">
+                <label>Cuéntanos sobre tu evento</label>
+                <textarea class="form-control" name="descripcion" id="descripcion" rows="4"
+                  placeholder="Describe el evento que tienes en mente, el lugar, detalles especiales..."></textarea>
+              </div>
+              <div class="col-12 mt-2">
+                <button type="submit" class="btn btn-send">
+                  <i class="bi bi-send-fill me-2"></i>Enviar Solicitud
+                </button>
+
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 {% endblock%}
-
-  

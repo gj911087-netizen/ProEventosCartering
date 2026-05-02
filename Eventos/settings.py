@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'Inversion',
     'Biografia',
     'ModeloCanvas',
+    
 ]
 
 MIDDLEWARE = [
